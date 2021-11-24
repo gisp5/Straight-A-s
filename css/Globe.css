@@ -42,17 +42,38 @@ body{
     }
 }
 
-/*Earth's map
+/* Earth's map */
 
-    Unfinished, do not touch or change
-*/
-
-#earth-section{
-    position: absolute;
+#earth-div{
+    z-index: 3; 
     background-color: white;
-    z-index: 3;
-    left: 50%;
-    top: 85%;
-    height: 100px;
-    width: 100px;  
+    position: absolute;
+    width: 400px; 
+    height: 400px;
+    background-image: url(/images/legomap.png);
+    background-size: 70vh;
+    background-position: bottom;
+    border-radius: 100%;
+    top: 30%;
+    left: 40%;
+    box-shadow: inset 10px 0 50px black, 0 0 500px; 
+    animation: earth 60s linear infinite;
+    border: purple 2px inset ;
 }
+
+@keyframes earth {
+    0%{
+        background-position: 0 0; 
+    }
+    100%{
+        background-position: 1000px 0;
+    }
+}
+/*position: absolute;
+z-index: 3;
+left: 25%;
+top: 0%; 
+width: 10px;
+height: 10px;
+border-radius: 100%;
+*/
