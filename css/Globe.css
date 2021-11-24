@@ -1,0 +1,18 @@
+.site {
+    height: 100vh;
+}
+.sky{
+    background-color: black;
+    height: 100vh;  
+    z-index: 1;
+}
+.earth{
+    background-color: white;
+    height: 40vh;
+    z-index: 2;
+}
+.santa {
+    background-color: red;
+    height: 10%;
+    z-index: 3;
+}
