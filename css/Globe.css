@@ -48,17 +48,16 @@ body{
     z-index: 3; 
     background-color: white;
     position: absolute;
-    width: 400px; 
-    height: 400px;
+    width: 600px; 
+    height: 600px;
     background-image: url(/images/legomap.png);
-    background-size: 70vh;
+    background-size: 103vh;
     background-position: bottom;
     border-radius: 100%;
-    top: 30%;
-    left: 40%;
+    top: 5%;
+    left: 35%;
     box-shadow: inset 10px 0 50px black, 0 0 500px; 
-    animation: earth 60s linear infinite;
-    border: purple 2px inset ;
+    animation: earth 100s linear infinite;
 }
 
 @keyframes earth {
@@ -69,11 +68,3 @@ body{
         background-position: 1000px 0;
     }
 }
-/*position: absolute;
-z-index: 3;
-left: 25%;
-top: 0%; 
-width: 10px;
-height: 10px;
-border-radius: 100%;
-*/
