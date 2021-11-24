@@ -11,13 +11,13 @@
     display: block; 
 }
 
-.stars{ 
+.stars{ /* Still picture of stars */
     z-index: 0; 
     background: black  
     url(../Images/stars1.png) repeat top center; 
 }
 
-.shimmer{ 
+.shimmer{ /* Controls star flickering */ 
     z-index: 1; 
     background: transparent
     url(../Images/shadows.png) repeat top center;
@@ -37,9 +37,12 @@
 
 /*Earth's map*/
 
-.earth{
- background-color: white;
- z-index: 3;
- left: 50%;
- top: 50%;
+#earth{
+    position: absolute;
+    background-color: white;
+    z-index: 3;
+    left: 50%;
+    top: 89.3%;
+    height: 100px;
+    width: 100px;
 }
