@@ -50,8 +50,8 @@ body{
     position: relative;
     width: 600px; 
     height: 600px;
-    background-image: url(/images/legomap.png);
-    background-size: 103vh;
+    background-image: url(/images/worldmap2.png);
+    background-size: 70vh;
     background-position: bottom;
     border-radius: 100%;
     top: 5%;
@@ -61,11 +61,10 @@ body{
 }
 
 #earth-div:hover{
-    width: 550px;
-    height: 550px;
     transition-property: all;
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
+
 }
 
 @keyframes earth {
