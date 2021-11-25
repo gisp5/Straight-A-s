@@ -47,7 +47,7 @@ body{
 #earth-div{
     z-index: 3; 
     background-color: white;
-    position: absolute;
+    position: relative;
     width: 600px; 
     height: 600px;
     background-image: url(/images/legomap.png);
@@ -58,6 +58,14 @@ body{
     left: 35%;
     box-shadow: inset 10px 0 50px black, 0 0 500px; 
     animation: earth 100s linear infinite;
+}
+
+#earth-div:hover{
+    width: 550px;
+    height: 550px;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
 }
 
 @keyframes earth {
