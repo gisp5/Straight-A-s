@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.skyContainer{
+    position: relative;
+    display: flex;
+    width: 100vh;
+}
+
+.sky{
+    width: 100%;
+}
+.castleContainer{
+    position: absolute;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    top: 10%;
+    left: 20%; 
+}
+
+.triangle{
+    position: absolute;
+}
+
+
