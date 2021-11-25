@@ -21,13 +21,13 @@ body{
 .stars{ /* Still picture of stars */
     z-index: 0; 
     background: black  
-    url(../Images/stars1.png) repeat top center; 
+    url(../Images/Wallpaper/stars1.png) repeat top center; 
 }
 
 .shimmer{ /* Controls star flickering */ 
     z-index: 1; 
     background: transparent
-    url(../Images/shadows.png) repeat top center;
+    url(../Images/Wallpaper/shadows.png) repeat top center;
     animation: shinyAnim linear infinite; 
     background-position: center; 
     animation-duration: 200s; 
@@ -50,7 +50,7 @@ body{
     position: relative;
     width: 600px; 
     height: 600px;
-    background-image: url(/images/worldmap2.png);
+    background-image: url(/images/Globe/worldmap2.png);
     background-size: 70vh;
     background-position: bottom;
     border-radius: 100%;
@@ -64,7 +64,6 @@ body{
     transition-property: all;
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
-
 }
 
 @keyframes earth {
