@@ -59,6 +59,22 @@ height: 100vh;}
     z-index: 5;
     left: 34%;
 }
+
+.treetree{
+    display: flex;
+}
+.tree {
+    position: relative;
+    z-index: 99;
+}
+.treeBig {
+    height: 50vh;
+}
+.treeSmal {
+
+    height: 40vh;
+
+}
 .moon img{
     position: absolute;
     z-index: 3;
