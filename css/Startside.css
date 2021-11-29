@@ -14,6 +14,7 @@
     z-index: 0; 
     background: black  
     url(../Images/Wallpaper/stars1.png) repeat top center; 
+    z-index: 1;
 }
 
 .shimmer{ /* Controls star flickering */ 
@@ -23,6 +24,7 @@
     animation: shinyAnim linear infinite; 
     background-position: center; 
     animation-duration: 200s; 
+    z-index: 2;
 }
 
 @keyframes shinyAnim{ 
@@ -43,6 +45,7 @@ height: 100vh;}
     width: 100vw;
     height: 100vh;
     position: absolute;
+    z-index: 3;
 }
 .road{
     height: 55vh;
