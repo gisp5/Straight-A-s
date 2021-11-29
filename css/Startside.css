@@ -4,7 +4,11 @@ body{
 
 .frame {background-color: black;
 width: 100vw;
-height: 100vh;}
+height: 100vh;
+display: none;}
+
+
+
 
 .ground {
     width: 100vw;
@@ -49,26 +53,26 @@ height: 100vh;}
 
 }
 
-#tree1 {
+.tree1 {
     left: -10%;
     top: 30%;
 }
-#tree2 {
+.tree2 {
     left: 15%;
     top: 40%;
 }
-#tree3 {
+.tree3 {
     left: -3%;
     top: 50%;
 }
-#tree4 {
+.tree4 {
     right: 13%;
     top: 30%;
 }
-#tree5 {    
+.tree5 {    
     right: 15%;
     top: 55%;}
-#tree6 {
+.tree6 {
     right: -15%;
     top: 40%;
 }
