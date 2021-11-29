@@ -51,3 +51,72 @@
     z-index: 3;
     width: 7%;
 }
+
+.tree{
+    position: absolute;
+    z-index: 2;
+}
+
+#tree1{
+    width: 30%;
+    left: -10%;
+    bottom: 0;
+}
+
+#tree2{
+    width: 35%;
+    left: -3%;
+    bottom: 10%;
+}
+
+#tree3{
+    width: 40%;
+    right: -12%;
+    bottom: 0%;
+}
+
+#tree4{
+    width: 40%;
+    height: 70%;
+    right: -4%;
+    bottom: 0;
+}
+
+.cloud{
+    position: absolute;
+    z-index: 1;
+    transform: rotate(90deg);
+}
+
+#cloud1{
+    width: 7%;
+    top: -2%;
+    left: 10%;
+}
+
+#cloud1{
+    width: 7%;
+    top: -2%;
+    left: 10%;
+}
+
+#cloud2{
+    width: 7%;
+    height: 35%;
+    top: -6%;
+    left: 30%;
+}
+
+#cloud3{
+    width: 13%;
+    height: 30%;
+    top: 10%;
+    right: 5%;
+}
+
+#cloud4{
+    width: 10%;
+    height: 50%;
+    top: -15%;
+    right: 30%;
+}
