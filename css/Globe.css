@@ -72,24 +72,46 @@
 
 #santa-sleigh{
     position: fixed;
-    z-index: 3;
+    z-index: 2;
     background-color: darkred;
     width: 600px;
     height: 100vh;
     left: 35%;
-    top: 75%;
+    top: 74.5%;
+    border-radius: 20%;
+}
+
+#sleigh-shadow{
+    position: fixed;
+    z-index: 1;
+    background-color: black;
+    width: 600px;
+    height: 150vh;
+    left: 35%;
+    top: 75.5%;
     border-radius: 20%;
 }
 
 #sleigh-rim{
     position: fixed;
-    z-index: 3;
+    z-index: 2;
     background-color: #442e19;
     width: 600px;
     height: 150vh;
     left: 35%;
     top: 76%;
     border-radius: 20%;
+}
+
+#santa-leg-right{
+    position: absolute;
+    z-index: 4;
+    background-color: white;
+    border-radius: 50%;
+    width: 150px;
+    height: 40vh;
+    left: 60%;
+    top: 7%;
 }
 
 /*-----------------------------------------------------------------*/
