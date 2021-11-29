@@ -12,5 +12,10 @@ height: 100vh;}
     position: absolute;
     bottom: 0%;
     left: 35%;
-    z-index: 10;
+    z-index: 4;
+}
+.bigThree{
+    position: absolute;
+    z-index: 5;
+    left: 34%;
 }
