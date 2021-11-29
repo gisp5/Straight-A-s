@@ -11,9 +11,9 @@ body{
 #bilde {
 z-index: 3;
 position: relative;
-right: 350px;
-top: 450px;
 justify-content: center;
-width:2600px;
-height: 500px;
+top: 2500px;
+right: 2000px;
+width:150vw;
+height: 40vh;
 }
