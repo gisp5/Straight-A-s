@@ -23,6 +23,7 @@ height: 100vh;}
     position: absolute;
     z-index: 5;
     left: 34%;
+
 }
 
 .treetree{
@@ -83,5 +84,13 @@ height: 100vh;}
     0% {top: 0;}
     50%{ top: 1%;}
     100% {top: 0;}
+    
+}
+
+@media screen and (max-width: 1000px){
+    .bigThree {
+        width: 100vh;
+    }
+    
     
 }
