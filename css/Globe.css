@@ -79,9 +79,17 @@
 }
 
 #santa-arms{
-    
+    position: fixed;
+    z-index: 4;
+    transform: rotate(180deg);
+    left: 36%;
+    top: 70%;
 }
 
+#santa-arms img{
+    width: 600px;
+    height: 600px;
+}
 /*-----------------------------------------------------------------*/
 
 /*Always has been meme*/
