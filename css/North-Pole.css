@@ -174,8 +174,8 @@
 
 #sleigh{
     position: absolute;
-    width: 20%;
-    height:20%;
+    width: 25%;
+    height: 25%;
     bottom: 10%;
     right: 10%;
     z-index:5;
