@@ -1,28 +1,53 @@
-body{
-    margin: 0;
-    padding: 0;
-}
-
-.skyContainer{
+.container{
     position: relative;
     display: flex;
-    width: 100vh;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.skyContainer{
+    position: absolute;
+    left: 0;
+
 }
 
 .sky{
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
 }
+
+.snowContainer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+
+}
+
+.snow{
+    width: 20%;
+}
+
 .castleContainer{
     position: absolute;
+    z-index: 2;
     display: flex;
-    margin: 0;
-    padding: 0;
-    top: 10%;
-    left: 20%; 
+    top: 20%;
 }
 
-.triangle{
+.windowContainer{
     position: absolute;
+    top: 25%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 61%; 
+    
 }
 
-
+.window{
+    z-index: 3;
+    width: 7%;
+}
