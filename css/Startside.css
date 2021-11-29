@@ -59,3 +59,20 @@ height: 100vh;}
     z-index: 5;
     left: 34%;
 }
+.moon img{
+    position: absolute;
+    z-index: 3;
+    width: 10vw;
+    right: 5%;
+    top: 0;
+    animation: moonBob 2s linear infinite;
+}
+
+
+
+@keyframes moonBob {
+    0% {top: 0;}
+    50%{ top: 1%;}
+    100% {top: 0;}
+    
+}
