@@ -1,28 +1,29 @@
-body {
-    margin: 0;
-    height: 100vh;
-}
+
 
 #container {
     background-color: black;
-    
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
 }
 
 #snowBackground{
     height: 100vh;
     width: 100vw;
+    position: absolute;
 }
 
 #assemblyLineContainer{
     /*border: 3px solid magenta;*/
-    position: absolute;
     left: 20%;
-    height: 40%;
-    top: 30%;
+    height: 20%;
+    top: 50%;
+    position: absolute;
+    width:20%;
 }
 
 #assemblyLine{
-    position: relative;
+    position: absolute;
     height: 100%;
     width: 100%;
     z-index:1;
@@ -34,7 +35,7 @@ body {
     height: 7%;
     top: 62.5%;
     position: absolute;
-    transform: skew(55deg,4deg) rotate(-14deg);
+    transform: skew(55deg,4deg) rotate(-13deg);
     left: 5.5%;
     z-index:1;
 }

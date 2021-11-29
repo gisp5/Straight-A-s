@@ -59,3 +59,50 @@ height: 100vh;}
     z-index: 5;
     left: 34%;
 }
+
+.treetree{
+    display: flex;
+}
+.tree {
+    position: relative;
+    z-index: 99;
+}
+.treeBig {
+    height: 50vh;
+}
+.treeSmal {
+
+    height: 40vh;
+
+}
+
+#tree1 {
+    left: 0%;
+    top: 10%;
+}
+#tree2 {}
+#tree3 {}
+#tree4 {}
+#tree5 {}
+#tree6 {}
+
+
+
+
+.moon img{
+    position: absolute;
+    z-index: 3;
+    width: 10vw;
+    right: 5%;
+    top: 0;
+    animation: moonBob 2s linear infinite;
+}
+
+
+
+@keyframes moonBob {
+    0% {top: 0;}
+    50%{ top: 1%;}
+    100% {top: 0;}
+    
+}
