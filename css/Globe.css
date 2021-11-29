@@ -69,7 +69,6 @@
 /*-----------------------------------------------------------------*/
 
 /*Santa's Sleigh --------------------------------------------------*/
-
 #santa-sleigh{
     position: fixed;
     z-index: 3;
@@ -81,4 +80,17 @@
     border-radius: 20%;
 }
 
+#sleigh-rim{
+    position: fixed;
+    z-index: 3;
+    background-color: red;
+    width: 600px;
+    height: 150vh;
+    left: 35%;
+    top: 76%;
+    border-radius: 20%;
+}
+
 /*-----------------------------------------------------------------*/
+
+/*Always has been meme*/
