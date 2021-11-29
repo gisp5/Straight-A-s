@@ -65,31 +65,33 @@
     border-radius: 20%;
 }
 
-#santa-legs{
-    position: fixed;
-    z-index: 4; 
-    left: 39%;
-    top: 70%;
-    transform: rotate(180deg);
-}
+    /*Santa -----------------------------------------------------------*/
+        #santa-legs{
+            position: fixed;
+            z-index: 4; 
+            left: 39%;
+            top: 70%;
+            transform: rotate(180deg);
+        }
 
-#santa-legs img{
-    width: 500px;
-    height: 500px; 
-}
+        #santa-legs img{
+            width: 500px;
+            height: 500px; 
+        }
 
-#santa-arms{
-    position: fixed;
-    z-index: 4;
-    transform: rotate(180deg);
-    left: 36%;
-    top: 70%;
-}
+        #santa-arms{
+            position: fixed;
+            z-index: 4;
+            transform: rotate(180deg);
+            left: 36%;
+            top: 70%;
+        }
 
-#santa-arms img{
-    width: 600px;
-    height: 600px;
-}
+        #santa-arms img{
+            width: 600px;
+            height: 600px;
+        }
+    /*-----------------------------------------------------------------*/
 /*-----------------------------------------------------------------*/
 
 /*Always has been meme*/
