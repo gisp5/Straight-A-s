@@ -32,7 +32,6 @@
 /*-----------------------------------------------------------------*/
 
 /*Santa's Sleigh --------------------------------------------------*/
-
 #santa-sleigh{
     position: fixed;
     z-index: 2;
@@ -67,14 +66,20 @@
 }
 
 #santa-legs{
-    position: absolute;
-    z-index: 4;
-    background-color: white;
-    border-radius: 50%;
-    width: 150px;
-    height: 40vh;
-    left: 60%;
-    top: 7%;
+    position: fixed;
+    z-index: 4; 
+    left: 39%;
+    top: 70%;
+    transform: rotate(180deg);
+}
+
+#santa-legs img{
+    width: 500px;
+    height: 500px; 
+}
+
+#santa-arms{
+    
 }
 
 /*-----------------------------------------------------------------*/
