@@ -1,0 +1,19 @@
+body{
+	overflow: hidden;
+
+}
+
+#container {
+	position: relative;
+}
+
+
+#bilde {
+z-index: 3;
+position: relative;
+justify-content: center;
+bottom: 0%;
+right: 20%;
+width:150vw;
+height: 40vh;
+}
