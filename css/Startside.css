@@ -1,18 +1,8 @@
-body {
-    height: 100vh;
-    width: 100vw;
-}
-.noe {
-    background-color: black;
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
+.frame {background-color: black;
+width: 100vw;}
 
-z-index: 1;}
-
-img {
-    position:absolute;
-    z-index: 3;
-    top: 10%;
+.ground {
     width: 100vw;
+    height: 100vh;
+    position: relative;
 }
