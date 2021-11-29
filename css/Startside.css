@@ -1,41 +1,4 @@
-/*Starry Backrgound ------------------------------------------*/
-.stars, .shimmer{ 
-    position: absolute; 
-    top: 0;
-    bottom: 0; 
-    left: 0;
-    right: 0;
-    width: 100vw; 
-    height: 100vh; 
-    display: block; 
-}
 
-.stars{ /* Still picture of stars */
-    z-index: 0; 
-    background: black  
-    url(../Images/Wallpaper/stars1.png) repeat top center; 
-    z-index: 1;
-}
-
-.shimmer{ /* Controls star flickering */ 
-    z-index: 1; 
-    background: transparent
-    url(../Images/Wallpaper/shadows.png) repeat top center;
-    animation: shinyAnim linear infinite; 
-    background-position: center; 
-    animation-duration: 200s; 
-    z-index: 2;
-}
-
-@keyframes shinyAnim{ 
-    from{
-        background-position: 0 0;
-    }
-    to{
-        background-position: -10000px 5000px;
-    }
-}
-/*----------------------------------------------------------------*/
 
 .frame {background-color: black;
 width: 100vw;
@@ -64,7 +27,7 @@ height: 100vh;}
     display: flex;
 }
 .tree {
-    position: relative;
+    position: absolute;
     z-index: 99;
 }
 .treeBig {
@@ -77,14 +40,28 @@ height: 100vh;}
 }
 
 #tree1 {
-    left: 0%;
-    top: 10%;
+    left: -10%;
+    top: 30%;
 }
-#tree2 {}
-#tree3 {}
-#tree4 {}
-#tree5 {}
-#tree6 {}
+#tree2 {
+    left: 15%;
+    top: 40%;
+}
+#tree3 {
+    left: -3%;
+    top: 50%;
+}
+#tree4 {
+    right: 13%;
+    top: 30%;
+}
+#tree5 {    
+    right: 15%;
+    top: 55%;}
+#tree6 {
+    right: -15%;
+    top: 40%;
+}
 
 
 
