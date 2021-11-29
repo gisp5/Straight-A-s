@@ -26,8 +26,11 @@ height: 100vh;}
 
 }
 #present {
+    position: absolute;
     z-index: 99;
-    left: 50%;
+    left: 47%;
+    top: 65%;
+    height: 7vh;
 }
 
 .treetree{
