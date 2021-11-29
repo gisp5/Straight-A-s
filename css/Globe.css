@@ -1,6 +1,4 @@
-
-/* Starry Backrgound*/
-
+/*Starry Backrgound ------------------------------------------*/
 .stars, .shimmer{ 
     position: absolute; 
     top: 0;
@@ -35,9 +33,9 @@
         background-position: -10000px 5000px;
     }
 }
+/*----------------------------------------------------------------*/
 
-/* Worldmap */
-
+/*Worldmap -------------------------------------------------------*/
 #earth-div{
     z-index: 3; 
     background-color: white;
@@ -68,3 +66,4 @@
         background-position: 1000px 0;
     }
 }
+/*-----------------------------------------------------------------*/
