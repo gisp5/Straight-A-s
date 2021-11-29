@@ -25,6 +25,10 @@ height: 100vh;}
     left: 34%;
 
 }
+#present {
+    z-index: 99;
+    left: 50%;
+}
 
 .treetree{
     display: flex;
