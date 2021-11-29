@@ -171,3 +171,7 @@
         left: 8%;
         z-index:3;}
 }
+
+#sleigh{
+    position: absolute;
+}
