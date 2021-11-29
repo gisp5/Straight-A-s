@@ -37,7 +37,7 @@
     height: 7%;
     top: 62.5%;
     position: absolute;
-    transform: skew(55deg,4deg) rotate(-13deg);
+    transform: skew(55deg,4deg) rotate(-12deg);
     left: 5.5%;
     z-index: 2;
 }
@@ -191,9 +191,10 @@
     0%{bottom: 10%;
         right: 10%;}
     50%{bottom: 10%;
-        right: 40%;}
+        right: 40%}
     70%{bottom: 30%;
-        right: 60%;}
+        right: 60%;
+        transform:rotate(15deg);}
     100%{bottom: 60%;
         right: 100%;}            
 }
