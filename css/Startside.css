@@ -5,15 +5,16 @@ body{
 .frame {
     width: 100%;
     height: 100%;
+
     position: relative;
 }
 
 .normalFrame {
-    display: none;
+    display: block;
 }
 
 .legoFrame {
-    display: block;
+    display: none;
 }
 
 
@@ -21,11 +22,14 @@ body{
     /*-------------------------------------------*/
 
     .moon {
-        z-index: 3;
         width: 10vw;
+
+        position: absolute;
         right: 5%;
         top: 0;
-        position: absolute;
+
+        z-index: 3;
+
         animation: moonBob 2s linear infinite;}
 
     #relMoon {}
@@ -49,14 +53,37 @@ body{
     .ground {
         height: 100vh;
         width: 100vw;
-        z-index: 3;
+
         position: absolute;
+
+        z-index: 3;
     }
 
-    .bigTree {display: none;}
-    .road {display: none;}
+    .bigTree {
+        position: absolute;
+        left: 34%;
 
-    #present{display: none;}
+        z-index: 5;
+    }
+    .road {
+        height: 55vh;
+
+        position: absolute;
+        bottom: 0%;
+        left: 35%;
+
+        z-index: 4;
+    }
+
+    #present{
+        height: 7vh;
+
+        position: absolute;
+        left: 47%;
+        top: 65%;
+    
+        z-index: 5;
+    }
 
 /*-------------------------------------------*/
 
