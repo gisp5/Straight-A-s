@@ -1,12 +1,28 @@
+body{
+    overflow: hidden;
+}
+
 /*Worldmap -------------------------------------------------------*/
+#earth-section{
+    position: absolute;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#earth-section>*{
+    position: absolute;
+    justify-content: center;
+}
+
 #earth-div{
-    z-index: 3; 
-    background-color: white;
     position: relative;
+    justify-content: center;
+    z-index: 3; 
     width: 600px; 
     height: 600px;
     background-image: url(/images/Globe/worldmap2.png);
-    background-size: 70vh;
+    background-size: 800px;
     background-position: bottom;
     border-radius: 100%;
     top: 5%;
@@ -30,68 +46,98 @@
     }
 }
 /*-----------------------------------------------------------------*/
+.moon img{
+    position: relative;
+    z-index: 50;
+    width: 10vw;
+    right: 5%;
+    top: 0%;
+    animation: moonBob 2s linear infinite;
+}
 
+@keyframes moonBob {
+    0% {top: 0;}
+    50%{ top: 1%;}
+    100% {top: 0;}
+    
+}
 /*Santa's Sleigh --------------------------------------------------*/
+
 #santa-sleigh{
-    position: fixed;
-    z-index: 2;
+    position: relative;
+    justify-content: center;
+    z-index: 3;
     background-color: darkred;
     width: 600px;
-    height: 100vh;
+    height: 400px;
     left: 35%;
-    top: 74.5%;
+    top: 130px;
     border-radius: 20%;
 }
 
 #sleigh-shadow{
-    position: fixed;
-    z-index: 1;
+    position: absolute;
+    justify-content: center;
+    z-index: 2;
     background-color: #101010;
-    width: 600px;
-    height: 150vh;
-    left: 35%;
-    top: 75.5%;
+    width: 580px;
+    height: 300px;
+    left: 10px;
+    top: 10px;
     border-radius: 20%;
 }
 
 #sleigh-rim{
-    position: fixed;
-    z-index: 2;
+    position: absolute;
+    justify-content: center;
+    display: flex;
+    z-index: 3;
     background-color: #442e19;
-    width: 600px;
-    height: 150vh;
-    left: 35%;
-    top: 76%;
+    width: 560px;
+    height: 300px;
+    left: 20px;
+    top: 15px;
     border-radius: 20%;
 }
 
     /*Santa -----------------------------------------------------------*/
         #santa-legs{
-            position: fixed;
+            position: relative;
+            justify-content: center;
             z-index: 4; 
-            left: 39%;
-            top: 70%;
+            right: 30px;
+            bottom: 60px;
             transform: rotate(180deg);
         }
 
         #santa-legs img{
+            justify-content: center;
             width: 500px;
             height: 500px; 
         }
 
         #santa-arms{
-            position: fixed;
+            position: relative;
+            justify-content: center;
             z-index: 4;
             transform: rotate(180deg);
-            left: 36%;
-            top: 70%;
+            left: 10px;
+            bottom: 600px;
         }
 
         #santa-arms img{
+            justify-content: center;
             width: 600px;
             height: 600px;
         }
     /*-----------------------------------------------------------------*/
+
+    #reindeer{
+        position: relative;
+        z-index: 2;
+        top: 0px;
+        left: 0px;
+    } 
 /*-----------------------------------------------------------------*/
 
 /*Always has been meme*/
