@@ -60,12 +60,30 @@ body{
 @keyframes moonBob {
     0% {top: 0;}
     50%{ top: 1%;}
-    100% {top: 0;}
-    
+    100% {top: 0;}  
 }
 /*-----------------------------------------------------------------*/
+/*Rocket ----------------------------------------------------------*/
+#spaceshuttle>*{
+    position: absolute;
+}
 
+#lego-rocket{
+    z-index: 4;
+    width: 10vh;
+    top: 30%;
+    left: 60%;
+    animation: rocketMove 5s linear forwards;
+}
 
+@keyframes rocketMove {
+    0% {top: 30%; left: 60%; transform: rotate(30deg);}
+    20% {top: 29%; left: 65%;}
+    50% {top: 30%; left: 80%; }
+    100% {top: 10%; left: 100%;}
+}
+
+/*-----------------------------------------------------------------*/
 /*Santa's Sleigh --------------------------------------------------*/
 
 #santa-sleigh{
