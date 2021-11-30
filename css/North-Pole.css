@@ -15,7 +15,6 @@
 }
 
 #assemblyLineContainer{
-    /*border: 3px solid magenta;*/
     right: 5%;
     height: 20%;
     top: 56%;
@@ -267,3 +266,93 @@
     height:30%;
 }
 
+.cloud{
+    position: absolute;
+    z-index: 7;
+    height:20%;
+    animation-duration: 300s;
+    animation-iteration-count: infinite;
+}
+
+#cloud1{
+    top:7%;
+    left: -10%;
+    animation-name: cloudMovement1
+}
+
+#cloud2{
+    top:10%;
+    left: 20%;
+    animation-name: cloudMovement2;
+}
+
+
+@keyframes cloudMovement1{
+    0%{top:7%;
+        left: -10%;}
+    100%{top: 7%;
+        left: 130%;}
+}
+
+@keyframes cloudMovement2{
+    0%{top:10%;
+        left: 20%;}
+    100%{top: 10%;
+        left: 130%;}
+}
+
+.snow{
+    position:absolute;
+    height: 5%;
+    left: 5%;
+    top: 20%;
+    z-index: 5;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+#flake1{
+    animation-name: snowflake1;
+}
+
+#flake2{
+    animation-name: snowflake2;
+    animation-delay:1s;
+}
+
+#flake3{
+    animation-name: snowflake3;
+    animation-delay:0.5s;
+}
+
+@keyframes snowflake1{
+    0%{left: 5%;
+        top: 20%;}
+    90%{opacity: 1;}    
+    100%{left: 5%;
+        top: 70%;
+        transform:rotate(90deg);
+        opacity: 0;}
+}
+
+@keyframes snowflake2{
+    0%{left: 10%;
+        top: 22%;}
+    90%{opacity: 1;}    
+    100%{left: 10%;
+        top: 72%;
+        transform:rotate(90deg);
+        opacity: 0;}
+}
+
+@keyframes snowflake3{
+    0%{left: 15%;
+        top: 18%;}
+    90%{opacity: 1;}    
+    100%{left: 15%;
+        top: 68%;
+        transform:rotate(-90deg);
+        opacity: 0;}
+}
