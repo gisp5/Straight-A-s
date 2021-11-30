@@ -125,34 +125,32 @@ body{
 }
 
 #tree1{
-    width: 30%;
-    left: -10%;
-    bottom: 0;
+    height: 50vh;
+    left: 3%;
+    bottom: -3%;
 }
 
 #tree2{
-    width: 35%;
-    left: -3%;
-    bottom: 10%;
+    height: 50vh;
+    left: -7%;
+    bottom: 5%;
 }
 
 #tree3{
-    width: 40%;
-    right: -12%;
-    bottom: 0%;
+    height: 53vh;
+    right: 2%;
+    bottom: 15%;
 }
 
 #tree4{
-    width: 40%;
-    height: 70%;
+    height: 50vh;
     right: -4%;
     bottom: 0;
 }
 
 #tree5{
-    width: 40%;
-    height: 70%;
-    left: -11%;
+    height: 50vh;
+    left: -1%;
     bottom: 20%;
 }
 
@@ -251,8 +249,7 @@ body{
 }
 
 #present1{
-    left: 10%;
-    top: 50%;
+
     opacity: 0;
     animation-name: present1Animation;
     animation-play-state: paused;
@@ -280,23 +277,27 @@ body{
 }
 
 /*Animation for present hover: Presents showing*/
-.presentShowBtn:hover + #present1{
+.presentShowBtn:hover > #present1{ 
+
     animation-play-state: running   ;
 }
 
 @keyframes present1Animation{
-    
+    0%{
+        right: 600%;
+        top: 600%;
+    }
     20%{
         opacity: 1;
     }
     50%{
-        left: 10%;
-        top: 45%;
+        right: 620%;
+        top: 630%;
         opacity: 1;
     }
     100%{
-        left: 11%;
-        top: 51;
+        right: 610%;
+        top: 620%;
         opacity: 1;
     }
 }
