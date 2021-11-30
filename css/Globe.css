@@ -46,12 +46,13 @@ body{
     }
 }
 /*-----------------------------------------------------------------*/
+
 .moon img{
-    position: relative;
-    z-index: 50;
-    width: 10vw;
-    right: 5%;
-    top: 0%;
+    position: absolute;
+    z-index: 3;
+    width: 200px;
+    right: 5px;
+    top: 0;
     animation: moonBob 2s linear infinite;
 }
 
@@ -61,6 +62,7 @@ body{
     100% {top: 0;}
     
 }
+
 /*Santa's Sleigh --------------------------------------------------*/
 
 #santa-sleigh{
@@ -133,10 +135,12 @@ body{
     /*-----------------------------------------------------------------*/
 
     #reindeer{
-        position: relative;
+        position: absolute;
         z-index: 2;
-        top: 0px;
+        top: 200px;
         left: 0px;
+        width: 50%;
+        height: 50%;
     } 
 /*-----------------------------------------------------------------*/
 
