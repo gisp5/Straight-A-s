@@ -32,11 +32,29 @@ body{
     width: 20%;
 }
 
+/*Stylig for stair*/
+.stairsContainer{
+    position: absolute;
+    bottom: -31%;
+    height: 20%;
+    z-index:7;
+    display: flex;
+    justify-content: center;
+
+}
+
+.stairs{
+    height: 100%;
+    transform: rotate(-90deg);
+    border-radius: 5px;
+}
+
 /*Styling for castle*/
 .castleContainer{
     position: absolute;
     z-index: 2;
     display: flex;
+    justify-content: center;
     top: 20%;
 }
 
@@ -48,6 +66,12 @@ body{
     width: 30%;
     height: 10%;
 }
+
+.castle{
+    border-radius: 3px 3px 0 0;
+    height: 60vh;
+}
+
 
 /*Styling for castle Windows*/
 .windowContainer, .windowContainerBottom{
@@ -68,7 +92,7 @@ body{
 
 .window{
     z-index: 3;
-    width: 7%;
+    height: 9vh;
     padding: .5%;
 }
 
@@ -78,11 +102,11 @@ body{
     justify-content: center;
     position: absolute;
     z-index: 3;
-    bottom: 17.5%;
+    bottom: 20%;
 }
 
 .door{
-    width: 25%;
+    height: 30vh;
 }
 
 #door2{
@@ -125,18 +149,19 @@ body{
     position: absolute;
     z-index: 1;
     transform: rotate(90deg);
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
 }
+
 
 #cloud1{
     width: 7%;
     top: -2%;
     left: 10%;
-}
-
-#cloud1{
-    width: 7%;
-    top: -2%;
-    left: 10%;
+    animation-name: cloud1;
+    
 }
 
 #cloud2{
@@ -144,6 +169,10 @@ body{
     height: 35%;
     top: -6%;
     left: 30%;
+    animation-name: cloud2;
+    animation-duration: 5s;
+
+
 }
 
 #cloud3{
@@ -151,6 +180,8 @@ body{
     height: 30%;
     top: 10%;
     right: 5%;
+    animation-name: cloud3;
+
 }
 
 #cloud4{
@@ -158,4 +189,36 @@ body{
     height: 50%;
     top: -15%;
     right: 30%;
+    animation-name: cloud4;
+
+}
+
+/*Animation for clouds*/
+
+@keyframes cloud1{
+
+    100%{
+        left: 13%;
+    }
+}
+
+@keyframes cloud2{
+
+    100%{
+        left: 34%;
+    }
+}
+
+@keyframes cloud3{
+
+    100%{
+        right: 7%;
+    }
+}
+
+@keyframes cloud4{
+
+    100%{
+        right: 35%;
+    }
 }
