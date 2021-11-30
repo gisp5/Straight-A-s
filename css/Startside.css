@@ -10,11 +10,11 @@ body{
 }
 
 .normalFrame {
-    display: none;
+    display: block;
 }
 
 .legoFrame {
-    display: block;
+    display: none;
 }
 
 
