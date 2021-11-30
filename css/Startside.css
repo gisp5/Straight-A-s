@@ -5,6 +5,7 @@ body{
 .frame {
     width: 100%;
     height: 100%;
+
     position: relative;
 }
 
@@ -21,11 +22,14 @@ body{
     /*-------------------------------------------*/
 
     .moon {
-        z-index: 3;
         width: 10vw;
+
+        position: absolute;
         right: 5%;
         top: 0;
-        position: absolute;
+
+        z-index: 3;
+
         animation: moonBob 2s linear infinite;}
 
     #relMoon {}
@@ -49,37 +53,87 @@ body{
     .ground {
         height: 100vh;
         width: 100vw;
-        z-index: 3;
+
         position: absolute;
+
+        z-index: 3;
     }
 
-    .bigTree {display: none;}
-    .road {display: none;}
+    .bigCenterTree {
+        height: 78vh ;
 
-    #present{display: none;}
+        position: absolute;
+        left: 34%;
+
+        z-index: 5;
+    }
+    .road {
+        height: 55vh;
+
+        position: absolute;
+        bottom: 0%;
+        left: 35%;
+
+        z-index: 4;
+    }
+
+    #present{
+        height: 7vh;
+
+        position: absolute;
+        left: 47%;
+        top: 65%;
+    
+        z-index: 5;
+    }
 
 /*-------------------------------------------*/
 
 /*Forest*/
 /*-------------------------------------------*/
 
-    .tree {display: none;}
+    .tree {
+        position: absolute;
+        z-index: 5;
+    }
 
-    .bigTree {}
+    .bigTree {
+        height: 50vh;
+    }
 
-    .smalTree {}
+    .smalTree {
+        height: 40vh;
+    }
 
-    .tree1 {}
+    .tree1 {
+        left: -10%;
+        top: 30%;
+    }
 
-    .tree2 {}
+    .tree2 {
+        left: 15%;
+        top: 40%;
+    }
 
-    .tree3 {}
+    .tree3 {
+        left: 6%;
+        top: 50%;
+    }
 
-    .tree4 {}
+    .tree4 {
+        right: 13%;
+        top: 30%;
+    }
 
-    .tree5 {}
+    .tree5 {
+        right: 27%;
+        top: 48%;
+    }
 
-    .tree6 {}
+    .tree6 {
+        right: 0%;
+        top: 40%;
+    }
 
 /*-------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
