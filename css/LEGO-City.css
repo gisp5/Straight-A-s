@@ -94,9 +94,65 @@ height: 40vh;
 #lightHalo1, #lightHalo2, #lightHalo3, #lightHalo4 {
 	z-index: 6;
 	position: absolute;
-	opacity: 20%;
+	opacity: 70%;
 	width: 10vw;
 	height: 20vh;
+	display: flex;
+	justify-content: center;
+
+}
+
+#lightHalo1 {
+	top: 37.5%;
+	left: 2.3%;
+	animation: lightFlicker 2s running infinite;
+	animation-delay: 0.2s;
+}
+
+#lightHalo2 {
+	top: 37.5%;
+	left: 47.7%;
+	animation: lightFlicker 2s running infinite;
+	animation-delay: 0.9s;
+}
+
+#lightHalo3 {
+	top: 37.5%;
+	left: 66%;
+	animation: lightFlicker 2s running infinite;
+	animation-delay: 0.3s;
+}
+
+#lightHalo4 {
+	top: 37.5%;
+	left: 84.5%;
+	animation: lightFlicker 2s running infinite;
+	animation-delay: 0.7s;
+}
+
+@keyframes lightFlicker {
+	0% {opacity: 70%;}
+	50%{opacity: 50%;}
+	100%{opacity: 79%;}
+}
+
+#legoTaxi {
+	z-index: 5;
+	right: -10%;
+	bottom: 19%;
+	height: 15vh;
+	width: 37vh;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	animation: taxi 0.1s linear forwards;
+}
+
+@keyframes taxi {
+	0% {right: -10%; bottom: 19%;}
+	45%{rotate: 5deg;}
+	50%{rotate: 360deg;}
+	100%{right: 70%; bottom: 19%; rotate: 50deg;}
 }
 
 
