@@ -144,25 +144,41 @@ body{
 
 #always-has-been-gun{
     position: absolute;
-    z-index: 50;
+    z-index: 5;
     width: 20vh;
     top: 50%;
     right: 5%;
     transform: rotate(20deg);
     opacity: 0;
-    
+    animation: alwaysHasBeenGun 3s linear infinite;
     
 }
 
 #always-has-been-gun:hover{
-    animation: alwaysHasBeenGun 2s linear infinite;
+    
     opacity: 1;
     
 }
 @keyframes alwaysHasBeenGun {
     0% {top: 50;}
-    50%{ top: 51%;}
+    50%{ top: 52%;}
     100% {top: 50;}
+}
+
+#always-has-been-victim{
+    position: absolute;
+    z-index: 5;
+    width: 5vh;
+    top: 50%;
+    right: 14%;
+    transform: rotate(20deg);
+    animation: alwaysHasBeenVictim 4s linear infinite;
+}
+
+@keyframes alwaysHasBeenVictim {
+    100% {top: 50;}
+    50%{ top: 54%;}
+    0% {top: 50;}
 }
 
 /*---------------------------------------------------------------------*/
