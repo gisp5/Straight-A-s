@@ -1,111 +1,85 @@
 body{
-    overflow:hidden
+}
+/*frame*/
+/*---------------------------------------------------------------------------------------*/
+.frame {
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
-.legoFrame {background-color: black;
-width: 100vw;
-height: 100vh;
-display: block;}
-
-.normalFrame{
+.normalFrame {
     display: none;
 }
 
-
-
-
-.ground {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    z-index: 3;
-}
-.road{
-    height: 55vh;
-    position: absolute;
-    bottom: 0%;
-    left: 35%;
-    z-index: 4;
-}
-.bigThree{
-    position: absolute;
-    z-index: 5;
-    left: 34%;
-
-}
-#present {
-    position: absolute;
-    z-index: 99;
-    left: 47%;
-    top: 65%;
-    height: 7vh;
-}
-
-.treetree{
-    display: flex;
-}
-.tree {
-    position: absolute;
-    z-index: 99;
-}
-.treeBig {
-    height: 50vh;
-}
-.treeSmal {
-
-    height: 40vh;
-
-}
-
-.tree1 {
-    left: -10%;
-    top: 30%;
-}
-.tree2 {
-    left: 15%;
-    top: 40%;
-}
-.tree3 {
-    left: 6%;
-    top: 50%;
-}
-.tree4 {
-    right: 13%;
-    top: 30%;
-}
-.tree5 {    
-    right: 27%;
-    top: 48%;}
-.tree6 {
-    right: 0%;
-    top: 40%;
+.legoFrame {
+    display: block;
 }
 
 
+/*sky*
+    /*-------------------------------------------*/
 
+    .moon {
+        z-index: 3;
+        width: 10vw;
+        right: 5%;
+        top: 0;
+        position: absolute;
+        animation: moonBob 2s linear infinite;}
 
-.moon img{
-    position: absolute;
-    z-index: 3;
-    width: 10vw;
-    right: 5%;
-    top: 0;
-    animation: moonBob 2s linear infinite;
-}
+    #relMoon {}
 
+    #legoMoon {}
 
+            /*Animations*/
+            /*-------------------------------------------*/
+            @keyframes moonBob {
+                0% {top: 0;}
+                50%{ top: 1%;}
+                100% {top: 0;}
+            }
+            /*-------------------------------------------*/
 
-@keyframes moonBob {
-    0% {top: 0;}
-    50%{ top: 1%;}
-    100% {top: 0;}
-    
-}
+/*-------------------------------------------*/
 
-@media screen and (max-width: 1000px){
-    .bigThree {
-        width: 100vh;
+/*Image Center*/
+/*-------------------------------------------*/
+
+    .ground {
+        height: 100vh;
+        width: 100vw;
+        z-index: 3;
+        position: absolute;
     }
-    
-    
-}
+
+    .bigTree {display: none;}
+    .road {display: none;}
+
+    #present{display: none;}
+
+/*-------------------------------------------*/
+
+/*Forest*/
+/*-------------------------------------------*/
+
+    .tree {display: none;}
+
+    .bigTree {}
+
+    .smalTree {}
+
+    .tree1 {}
+
+    .tree2 {}
+
+    .tree3 {}
+
+    .tree4 {}
+
+    .tree5 {}
+
+    .tree6 {}
+
+/*-------------------------------------------*/
+/*---------------------------------------------------------------------------------------*/
