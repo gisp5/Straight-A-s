@@ -251,8 +251,7 @@ body{
 }
 
 #present1{
-    left: 10%;
-    top: 50%;
+
     opacity: 0;
     animation-name: present1Animation;
     animation-play-state: paused;
@@ -280,23 +279,27 @@ body{
 }
 
 /*Animation for present hover: Presents showing*/
-.presentShowBtn:hover + #present1{
+.presentShowBtn:hover > #present1{ 
+
     animation-play-state: running   ;
 }
 
 @keyframes present1Animation{
-    
+    0%{
+        right: 600%;
+        top: 600%;
+    }
     20%{
         opacity: 1;
     }
     50%{
-        left: 10%;
-        top: 45%;
+        right: 620%;
+        top: 630%;
         opacity: 1;
     }
     100%{
-        left: 11%;
-        top: 51;
+        right: 610%;
+        top: 620%;
         opacity: 1;
     }
 }
