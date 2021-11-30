@@ -10,11 +10,11 @@ body{
 }
 
 .normalFrame {
-    display: block;
+    display: none;
 }
 
 .legoFrame {
-    display: none;
+    display: block;
 }
 
 
@@ -59,7 +59,9 @@ body{
         z-index: 3;
     }
 
-    .bigTree {
+    .bigCenterTree {
+        height: 78vh ;
+
         position: absolute;
         left: 34%;
 
@@ -90,23 +92,48 @@ body{
 /*Forest*/
 /*-------------------------------------------*/
 
-    .tree {display: none;}
+    .tree {
+        position: absolute;
+        z-index: 5;
+    }
 
-    .bigTree {}
+    .bigTree {
+        height: 50vh;
+    }
 
-    .smalTree {}
+    .smalTree {
+        height: 40vh;
+    }
 
-    .tree1 {}
+    .tree1 {
+        left: -10%;
+        top: 30%;
+    }
 
-    .tree2 {}
+    .tree2 {
+        left: 15%;
+        top: 40%;
+    }
 
-    .tree3 {}
+    .tree3 {
+        left: 6%;
+        top: 50%;
+    }
 
-    .tree4 {}
+    .tree4 {
+        right: 13%;
+        top: 30%;
+    }
 
-    .tree5 {}
+    .tree5 {
+        right: 27%;
+        top: 48%;
+    }
 
-    .tree6 {}
+    .tree6 {
+        right: 0%;
+        top: 40%;
+    }
 
 /*-------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
