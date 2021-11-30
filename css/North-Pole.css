@@ -176,15 +176,36 @@
     width: 25%;
     height: 25%;
     bottom: 5%;
+    right: -30%;
+    z-index: 5;
+    animation-name: sleighTravel1,sleighTravel2;
+    animation-delay: 0s,6s;
+    animation-duration: 4s;
+    animation-timing-function:linear;
+    animation-fill-mode: forwards;
+}
+@keyframes sleighTravel1{
+    0%{bottom: 15%;
+        right: -30%;
+        transform:rotate(-15deg)}
+    100%{bottom: 5%;
+        right: 10%;}
+}
+/*#sleigh{
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    bottom: 5%;
     right: 10%;
     z-index: 5;
-    animation-name: sleighTravel;
+    animation-name: sleighTravel2;
     animation-duration: 4s;
-    animation-timing-function:linear
+    animation-timing-function:linear;
+    animation-fill-mode: forwards;
     
-}
+}*/
 
-@keyframes sleighTravel{
+@keyframes sleighTravel2{
     0%{bottom: 5%;
         right: 10%;}
     50%{bottom: 5%;
@@ -245,6 +266,3 @@
     height:30%;
 }
 
-.stars{
-    background: blue;
-}
