@@ -72,5 +72,25 @@ height: 40vh;
 	height: 60vh;
 	}
 
+#balconyWoman {
+	z-index: 2;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	top: 12.5%;
+	right: 75.85%;
+	width:2.5vw;
+	height: 5vh;
+	animation: woman 2s linear infinite;
+	}
+
+@keyframes woman {
+	0% {top: 12.5;  transform: rotate(-5deg);}
+    50%{ top: 12.6%,; transform: rotate(5deg);}
+    100% {top: 12.5;  transform: rotate(-5deg);}
+    
+}
+
+
 
 
