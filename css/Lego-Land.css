@@ -125,34 +125,32 @@ body{
 }
 
 #tree1{
-    width: 30%;
-    left: -10%;
-    bottom: 0;
+    height: 50vh;
+    left: 3%;
+    bottom: -3%;
 }
 
 #tree2{
-    width: 35%;
-    left: -3%;
-    bottom: 10%;
+    height: 50vh;
+    left: -7%;
+    bottom: 5%;
 }
 
 #tree3{
-    width: 40%;
-    right: -12%;
-    bottom: 0%;
+    height: 53vh;
+    right: 2%;
+    bottom: 15%;
 }
 
 #tree4{
-    width: 40%;
-    height: 70%;
+    height: 50vh;
     right: -4%;
     bottom: 0;
 }
 
 #tree5{
-    width: 40%;
-    height: 70%;
-    left: -11%;
+    height: 50vh;
+    left: -1%;
     bottom: 20%;
 }
 
