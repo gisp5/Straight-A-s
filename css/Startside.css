@@ -1,5 +1,5 @@
 body{
-    
+    overflow: hidden;
 }
 /*frame*/
 /*---------------------------------------------------------------------------------------*/
@@ -11,11 +11,11 @@ body{
 }
 
 .normalFrame {
-    display: block;
+    display: noen;
 }
 
 .legoFrame {
-    display: none;
+    display: block;
 }
 
 
@@ -26,7 +26,8 @@ body{
         position: absolute;
         height: 9vh;
         z-index: 4;
-    }
+        left: -30%;
+        animation: santaRide 20s  1 ;}
 
     .moon {
         height: 15vh;
@@ -36,7 +37,7 @@ body{
 
         z-index: 3;
 
-        animation: moonBob 2s linear infinite;}
+        animation: moonBob 20s linear;}
 
     #relMoon {}
 
@@ -48,6 +49,29 @@ body{
                 0% {top: 0;}
                 50%{ top: 1%;}
                 100% {top: 0;}
+            }
+
+            @keyframes santaRide {
+                0%{
+                    right: -10%;
+                    top: 20%;
+                }
+                25%{
+                    right: 17%;
+                    top: 10%;
+                    z-index: 2;
+                }
+                30%{
+                    transform: rotatey(180deg)
+                }
+                50%{
+                    right: -2%;
+                    top: 3%;
+                    z-index: 4;
+                }
+                75%{}
+                100%{right: 100%;}
+                
             }
             /*-------------------------------------------*/
 
@@ -184,5 +208,30 @@ body{
         top: 40%;
     }
 
+
+    #sleigh {
+        position: absolute;
+        height: 30vh;
+        z-index: 7;
+        right: -30%;
+        top: 75%;
+        opacity: 1;
+        animation: sleighInn 5s 20s  1 ease-out forwards;
+    }
+
+
+    @keyframes sleighInn {
+        from{
+            top: 75%;
+            right: -30%;
+            opacity: 1;
+        }
+        to{
+            right: 0;
+            top: 75%;
+            opacity: 1;
+        }
+        
+    }
 /*-------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
