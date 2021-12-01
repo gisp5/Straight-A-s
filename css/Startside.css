@@ -1,5 +1,6 @@
 body{
     overflow: hidden;
+    position: relative;
 }
 /*frame*/
 /*---------------------------------------------------------------------------------------*/
@@ -26,8 +27,9 @@ body{
         position: absolute;
         height: 9vh;
         z-index: 4;
-        left: -30%;
-        animation: santaRide 20s  1 ;}
+        right: 30%;
+        animation: santaRide 20s linear;
+            }
 
     .moon {
         height: 15vh;
@@ -52,6 +54,7 @@ body{
             }
 
             @keyframes santaRide {
+
                 0%{
                     right: -10%;
                     top: 20%;
@@ -68,9 +71,13 @@ body{
                     right: -2%;
                     top: 3%;
                     z-index: 4;
+                    transform: rotatey(0deg);
                 }
-                75%{}
-                100%{right: 100%;}
+                100%{
+                    right: 100%;
+                    top: 3%
+                }
+                
                 
             }
             /*-------------------------------------------*/
