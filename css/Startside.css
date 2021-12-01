@@ -1,5 +1,5 @@
 body{
-    overflow: hidden;
+    
 }
 /*frame*/
 /*---------------------------------------------------------------------------------------*/
@@ -7,20 +7,26 @@ body{
     width: 100%;
     height: 100%;
 
-    position: relative;
+    position: absolute;
 }
 
 .normalFrame {
-    display: none;
+    display: block;
 }
 
 .legoFrame {
-    display: block;
+    display: none;
 }
 
 
 /*sky*
     /*-------------------------------------------*/
+
+    #santaSleigh {
+        position: absolute;
+        height: 9vh;
+        z-index: 4;
+    }
 
     .moon {
         height: 15vh;
