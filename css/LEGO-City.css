@@ -19,9 +19,11 @@ body{
 	height: 100vh;
 	width: 100vw;
 }
+#city>*{
+	position: absolute;
+}
 #road {
 z-index: 3;
-position: absolute;
 display: flex;
 justify-content: center;
 top: 64.7%;
@@ -31,7 +33,6 @@ height: 40vh;
 }
 #house1 {
 	z-index: 4;
-	position: absolute;
 	display: flex;
 	justify-content: center;
 	top: -20%;
@@ -42,7 +43,6 @@ height: 40vh;
 
 #house2 {
 	z-index: 4;
-	position: absolute;
 	display: flex;
 	justify-content: center;
 	top: -20%;
@@ -53,7 +53,6 @@ height: 40vh;
 
 #house3 {
 	z-index: 4;
-	position: absolute;
 	display: flex;
 	justify-content: center;
 	top: -20%;
@@ -63,7 +62,6 @@ height: 40vh;
 	}
 #house4 {
 	z-index: 3;
-	position: absolute;
 	display: flex;
 	justify-content: center;
 	top: 5%;
@@ -74,7 +72,6 @@ height: 40vh;
 
 #balconyWoman {
 	z-index: 2;
-	position: absolute;
 	display: flex;
 	justify-content: center;
 	top: 12.5%;
@@ -93,7 +90,6 @@ height: 40vh;
 
 #lightHalo1, #lightHalo2, #lightHalo3, #lightHalo4 {
 	z-index: 6;
-	position: absolute;
 	opacity: 70%;
 	width: 10vw;
 	height: 20vh;
@@ -142,10 +138,9 @@ height: 40vh;
 	bottom: 19%;
 	height: 15vh;
 	width: 37vh;
-	position: absolute;
 	display: flex;
 	justify-content: center;
-	animation: taxi 0.1s linear forwards;
+	animation: taxi 3s linear forwards;
 }
 
 @keyframes taxi {
@@ -155,6 +150,48 @@ height: 40vh;
 	100%{right: 70%; bottom: 19%; rotate: 50deg;}
 }
 
+#legoManArmless {
+	z-index: 4;
+	width: 15vw;
+	height: 20vh;
+	top: 50%;
+	left: 33%;
+}
+
+
+#legoArm {
+	z-index: 4;
+	width: 3vw;
+	height: 13vh;
+	top: 54%;
+	left: 39.1%;
+	animation: armimation 10s linear infinite;
+	animation-delay: 6s;
+	animation-play-state: running;
+}
+
+@keyframes armimation {
+	25% {
+		left: 38.6%;
+		top: 54.6%;
+	}
+
+	50% {
+		left: 37.6%;
+		top: 54.5%;
+	}
+
+	75% {
+		left: 37.3%;
+		top: 53.1%;
+	}
+
+	100% {
+		transform: rotate(150deg);
+		left: 37.2%;
+		top: 52%;
+	}
+}
 
 
 

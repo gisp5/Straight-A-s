@@ -92,7 +92,7 @@ body {
     position: absolute;
 }
 
-#lego-rocket {
+#legoRocket {
     z-index: 4;
     width: 7vw;
     top: 30%;
@@ -102,16 +102,21 @@ body {
 
 @keyframes rocketMove {
     0% {
-        top: 30%; left: 60%; transform: rotate(30deg);
+        top: 30%; 
+        left: 60%; 
+        transform: rotate(30deg);
     }
     20% {
-        top: 29%; left: 65%;
+        top: 29%; 
+        left: 65%;
     }
     50% {
-        top: 30%; left: 80%; 
+        top: 30%; 
+        left: 80%; 
     }
     100% {
-        top: 10%; left: 100%;
+        top: 10%; 
+        left: 100%;
     }
 }
 /*-----------------------------------------------------------------*/
@@ -300,6 +305,37 @@ body {
     100% {
         opacity: 1;
     }
+}
+
+#spaceCow {
+    z-index: 5;
+    top: -10%;
+    left: -10%;
+    width: 5vw;
+    animation: flyingSpaceCow 3s linear forwards;
+}
+
+@keyframes flyingSpaceCow {
+    0% {
+       opacity: 0; 
+    }
+    50% {
+        top: 25%;
+        left: 25%;
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+    80% {
+        top: 30%;
+        left: 35%;
+    }
+    100% {
+        top: 35%;
+        left: 40%;
+        transform: rotate(720deg);
+        opacity: 0;
+    }
+    
 }
 /*---------------------------------------------------------------------*/
 
