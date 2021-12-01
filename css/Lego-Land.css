@@ -6,10 +6,12 @@ body{
     position: relative;
     display: flex;
     justify-content: center;
-    height: 100%;
+    height: 100vh;
 }
 
 /*Styling for sky and snow backround*/
+/*---------------------------------------------------------------------------------------*/
+
 .skyContainer{
     position: absolute;
     left: 0;
@@ -17,7 +19,6 @@ body{
 
 .sky{
     width: 100vw;
-    height: 100vh;
 }
 
 .snowContainer{
@@ -34,29 +35,31 @@ body{
 }
 
 /*Stylig for stair*/
+/*---------------------------------------------------------------------------------------*/
+
 .stairsContainer{
     position: absolute;
-    bottom: -31%;
-    height: 20%;
-    z-index:7;
-    display: flex;
-    justify-content: center;
-
+    bottom: -26vh;
+    z-index:3;
+    z-index: 9; 
 }
 
 .stairs{
-    height: 100%;
+    height: 20vh;
+    width: 40vw;
     transform: rotate(-90deg);
     border-radius: 5px;
 }
 
 /*Styling for castle*/
+/*---------------------------------------------------------------------------------------*/
+
 .castleContainer{
-    position: relative;
+    position: absolute;
+    top: 20%;
     z-index: 2;
     display: flex;
     justify-content: center;
-    top: 20%;
 }
 
 .castleTriangle{
@@ -71,37 +74,44 @@ body{
 .castle{
     border-radius: 3px 3px 0 0;
     height: 60vh;
+    width: 30vw;
 }
 
 
 /*Styling for castle Windows*/
+/*---------------------------------------------------------------------------------------*/
+
 .windowContainer, .windowContainerBottom{
     position: absolute;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 60vw;
-    height: 10vw;
+    height: 18vh;
     z-index: 3;
 }
 
 .windowContainer{
-    top: 25%;
+    top: 25vh;
 }
 
 .windowContainerBottom{
-    top: 65%;
+    top: 65vh;
 }
 
 .window{
     z-index: 3;
-    height: 9vh;
+    height: 50%;
+    width: 30%;
     padding: .4%;
+    flex: 1 0 10%;
+    /*flex-basis: 10%;*/
 }
 
 /*Styling for castle door*/
+/*---------------------------------------------------------------------------------------*/
+
 .doorContainer{
-    position: relative;
     display: flex;
     justify-content: center;
     position: absolute;
@@ -111,6 +121,7 @@ body{
 
 .door{
     height: 25vh;
+    width: 5vw;
 }
 
 #door2{
@@ -118,26 +129,31 @@ body{
 }
 
 /*Merry Christmas speechbubble styling*/
+/*---------------------------------------------------------------------------------------*/
+
 .merryXmas{
     position: absolute;
     height: 20vh;
-    top: -50%;
+    top: 42%;
     left: 50%;
-    z-index: 4;
     opacity: 0;
-    transition: all;
     transition-property: all;
     transition-timing-function: ease-in-out;
-    transition-duration: .6s;   
+    transition-duration: .6s;
 }
 
 /*Merry Christmas speechbubble animation*/
-.doorContainer:hover > .merryXmas{
+/*---------------------------------------------------------------------------------------*/
+
+.doorContainer:hover + .merryXmas{
     opacity: 1;
+    z-index: 2;
 }
 
 
 /*Styling for trees*/
+/*---------------------------------------------------------------------------------------*/
+
 .tree{
     position: absolute;
     z-index: 3;
@@ -177,9 +193,10 @@ body{
 
 
 /*Styling for clouds*/
+/*---------------------------------------------------------------------------------------*/
+
 .cloud{
     position: absolute;
-    z-index: 1;
     transform: rotate(90deg);
     animation-iteration-count: infinite;
     animation-duration: 4s;
@@ -226,6 +243,7 @@ body{
 }
 
 /*Animation for clouds*/
+/*---------------------------------------------------------------------------------------*/
 
 @keyframes cloud1{
 
@@ -258,25 +276,26 @@ body{
 
 .present{
     position: absolute;
-    height: 10vh;
+    height: 8vh;
     z-index: 0;
     animation-play-state: paused;
     animation-duration: 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    animation-timing-function:ease-in-out; 
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); 
+}
+
+#present1, #present2, #present3{
+    opacity: 0;
 }
 
 #present1{
-    opacity: 0;
     animation-name: present1Animation;
 }
 #present2{
-    opacity: 0;
     animation-name: present2Animation;
 }
 #present3{
-    opacity: 0;
     animation-name: present3Animation;
 }
 
@@ -284,15 +303,17 @@ body{
     position: absolute;
     height: 10vh;
     width: 10vw;
-    background-color: rgb(226, 226, 226);
+    background-color: rgb(216, 216, 216);
     z-index: 99;
     cursor: pointer;
     border-radius: 100%;
-    text-align: center; 
+    text-align: center;
 }
 
 
 /*Animation for present hover: Presents showing*/
+/*---------------------------------------------------------------------------------------*/
+
 .presentShowBtn:hover > #present1{ 
     animation-play-state: running;
 }
@@ -348,3 +369,54 @@ body{
         top: 890%;
     }
 }
+
+/*Bush styling*/
+/*---------------------------------------------------------------------------------------*/
+
+.bushContainer{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    top: 65vh;
+    height: 100vh;
+    width: 30vw;    
+    z-index: 2;
+}
+
+.bush{
+    height: 10vh;
+    padding: 10vh;
+    top: 0;
+    animation-name: jump;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-delay: 3s;
+}
+
+/*Bush jump animation*/
+/*---------------------------------------------------------------------------------------*/
+
+@keyframes jump{
+    0%{
+        transform: translate(0);
+    }
+    20%,
+    40%,
+    60%,
+    80%{
+        transform: translate(.2vh);
+    }
+    10%,
+    30%,
+    50%{
+        transform: translate(-.2vh);
+    }
+    70%,
+    100%{
+        transform: translate(0);
+    }
+}
+
+
+
+
