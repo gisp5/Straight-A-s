@@ -1,23 +1,23 @@
 /*Body ------------------------------------------------------------*/
-body{
+body {
     overflow: hidden;
 }
 /*-----------------------------------------------------------------*/
 
 /*The World -------------------------------------------------------*/
-#earth-section{
+#earth-section {
     position: absolute;
     justify-content: center;
     width: 100vw;
     height: 100vh;
 }
 
-#earth-section>*{
+#earth-section> * {
     position: absolute;
     justify-content: center;
 }
 
-#earth-div{
+#earth-div {
     position: relative;
     justify-content: center;
     z-index: 3; 
@@ -33,24 +33,24 @@ body{
     animation: earth 100s linear infinite;
 }
 
-#earth-div:hover{
+#earth-div:hover {
     transition-property: all;
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
 }
 
 @keyframes earth {
-    0%{
+    0% {
         background-position: 0 0; 
     }
-    100%{
+    100% {
         background-position: 1000px 0;
     }
 }
 /*-----------------------------------------------------------------*/
 
 /*Moon ------------------------------------------------------------*/
-.moon img{
+.moon img {
     position: absolute;
     z-index: 3;
     width: 10%;
@@ -60,18 +60,24 @@ body{
 }
 
 @keyframes moonBob {
-    0% {top: 0;}
-    50%{ top: 1%;}
-    100% {top: 0;}  
+    0% {
+        top: 0;
+    }
+    50% { 
+        top: 1%;
+    }
+    100% {
+        top: 0;
+    }  
 }
 /*-----------------------------------------------------------------*/
 
 /*Rocket ----------------------------------------------------------*/
-#spaceshuttle>*{
+#spaceshuttle> * {
     position: absolute;
 }
 
-#lego-rocket{
+#lego-rocket {
     z-index: 4;
     width: 7vw;
     top: 30%;
@@ -80,54 +86,128 @@ body{
 }
 
 @keyframes rocketMove {
-    0% {top: 30%; left: 60%; transform: rotate(30deg);}
-    20% {top: 29%; left: 65%;}
-    50% {top: 30%; left: 80%; }
-    100% {top: 10%; left: 100%;}
+    0% {
+        top: 30%; left: 60%; transform: rotate(30deg);
+    }
+    20% {
+        top: 29%; left: 65%;
+    }
+    50% {
+        top: 30%; left: 80%; 
+    }
+    100% {
+        top: 10%; left: 100%;
+    }
 }
 /*-----------------------------------------------------------------*/
 
 /*Spacemen --------------------------------------------------------*/
-
-#always-has-been-gun{
+#spacemen> * {
     position: absolute;
-    z-index: 5;
-    width: 20vh;
+    z-index: 4;
+}
+
+#spaceman-1 {
+    width: 11vw;
     top: 50%;
     right: 5%;
     transform: rotate(20deg);
-    animation: alwaysHasBeenGun 3s linear infinite;   
+    animation: spaceman1Float 3s linear infinite;   
+}
+#spaceman-1:hover{
+    animation: spaceman1Spin 2s linear forwards;
 }
 
-@keyframes alwaysHasBeenGun {
-    0% {top: 50;}
-    50%{ top: 52%;  transform: rotate(-5deg);} 
-    100% {top: 50;}
+@keyframes spaceman1Float {
+    0% { 
+        top: 50;
+    }
+    50% { 
+        top: 52%;  transform: rotate(-5deg);}
+
+    100% {
+        top: 50;
+    }
 }
 
-#always-has-been-victim{
-    position: absolute;
-    z-index: 5;
-    width: 5vh;
+@keyframes spaceman1Spin {
+    0% {
+        transform: rotate(45deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(380deg);
+    }
+}
+
+
+#spaceman-2 {
+    width: 2.5vw;
     top: 50%;
     right: 14%;
     transform: rotate(20deg);
-    animation: alwaysHasBeenVictim 4s linear infinite;
+    animation: spaceman2Float 4s linear infinite;
 }
 
-@keyframes alwaysHasBeenVictim {
-    100% {top: 50;}
-    50%{ top: 54%; transform: rotate(35deg);}
-    0% {top: 50;}
+#spaceman-2:hover {
+    animation: spaceman2Spin 2s linear forwards;
+}
+
+@keyframes spaceman2Float {
+    100% {
+        top: 50;}
+
+    50% { 
+        top: 54%; transform: rotate(35deg);
+    }
+    0% {
+        top: 50;
+    }
+}
+
+@keyframes spaceman2Spin {
+    0% {
+        transform: rotate(-45deg);
+    }
+    50% {
+        transform: rotate(-180deg);
+    }
+    100% {
+        transform: rotate(-340deg);
+    }
+}
+
+#its-all-lego {
+    z-index: 4;
+    width: 15vw;
+    top: 67%;
+    left: 75%;
+    opacity: 0;
+    transform: rotate(15deg);
+    animation: itsAllLegoPictureAnimation 3s linear infinite;
+}
+
+@keyframes itsAllLegoPictureAnimation {
+    0% {
+        top: 67%;
+    }    
+    50% {
+        top: 70%;
+    }    
+    100% {
+        top: 67%;
+    } 
 }
 /*---------------------------------------------------------------------*/
 
 /*Extraterrestrial ----------------------------------------------------*/
-#extraterrestrial-section>*{
+#extraterrestrial-section> * {
     position: absolute;
 }
 
-#lego-ufo{
+#lego-ufo {
     z-index: 4;
     width: 10vw;
     top: 40%;
@@ -135,30 +215,77 @@ body{
     opacity: 0.1;
     transform: rotate(-15deg);
     animation: ufoBobbing 6s linear infinite;
-    
 }
 
-#lego-ufo:hover{
+#lego-ufo:hover {
     animation: ufoVisibility 1s linear forwards;
 }
 
 @keyframes ufoBobbing {
-    0% {top: 40%;}
-    50% {top: 44%;}
-    100% {top: 40%;}
+    0% {
+        top: 40%;
+    }
+    50% {
+        top: 44%;
+    }
+    100% {
+        top: 40%;
+    }
 }
 
-@keyframes ufoVisibility{
-    0% {opacity: 0.1;}
-    50% {opacity: 0.5;}
-    100% {opacity: 1;}
+@keyframes ufoVisibility {
+    0% {
+        opacity: 0.1;
+    } 
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
+#lego-alien {
+    z-index: 4;
+    width: 3vw;
+    top: 45%;
+    left: 22%;
+    transform: rotate(10deg);
+    opacity: 0.1;
+    animation: alienBob 3s linear infinite;   
+}
+
+#lego-alien:hover {
+    animation: alienVisibility 1s linear forwards;
+}
+
+@keyframes alienBob {
+    0% {
+        top: 45%;}
+
+    50% {
+        top: 47%;
+    }
+    100% {
+        top: 45%;
+    }
+}
+
+@keyframes alienVisibility {
+    0% {
+        opacity: 0.1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 /*---------------------------------------------------------------------*/
 
 /*Santa's Sleigh ------------------------------------------------------*/
-
-#santa-sleigh{
+#santa-sleigh {
     position: relative;
     justify-content: center;
     z-index: 3;
@@ -170,7 +297,7 @@ body{
     border-radius: 20%;
 }
 
-#sleigh-shadow{
+#sleigh-shadow {
     position: absolute;
     justify-content: center;
     z-index: 2;
@@ -182,7 +309,7 @@ body{
     border-radius: 20%;
 }
 
-#sleigh-rim{
+#sleigh-rim {
     position: absolute;
     justify-content: center;
     display: flex;
@@ -195,7 +322,7 @@ body{
     border-radius: 20%;
 }
 
-#reindeer{
+#reindeer {
     position: absolute;
     z-index: 0;
     bottom: 60%;
@@ -204,27 +331,27 @@ body{
 } 
 
     /*Santa -----------------------------------------------------------*/
-        #santa-legs{
-            position: relative;
-            justify-content: center;
-            z-index: 4; 
-            left: 2%;
-            bottom: 40%;
-            width: 100%;
-            height: 200%;
-            transform: rotate(180deg);
-        }
+    #santa-legs {
+    position: relative;
+    justify-content: center;
+    z-index: 4; 
+    left: 2%;
+    bottom: 40%;
+    width: 100%;
+    height: 200%;
+    transform: rotate(180deg);
+    }
 
-        #santa-arms{
-            position: relative;
-            justify-content: center;
-            z-index: 4;
-            transform: rotate(180deg);
-            left: 0%;
-            bottom: 210%;
-            width: 100%;
-            height: 150%;
-        }
+    #santa-arms {
+    position: relative;
+    justify-content: center;
+    z-index: 4;
+    transform: rotate(180deg);
+    left: 0%;
+    bottom: 210%;
+    width: 100%;
+    height: 150%;
+    }
     /*-----------------------------------------------------------------*/
 
 /*---------------------------------------------------------------------*/
