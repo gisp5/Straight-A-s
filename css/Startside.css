@@ -79,19 +79,50 @@ body{
 
     #present{
         height: 7vh;
+        width: 4.5vw;
 
         position: absolute;
-        left: 47%;
-        top: 65%;
+        display: block;
     
-        z-index: 5;
+        z-index: 4;
+        animation-name: noenoe;
+    }
+    #mushroom {
+        height: 9vh;
+        width: 5.76vw;
+
+        position: absolute;
+        display: none;
+    
+        z-index: 9;
+    animation-name: noenoe;
+}
+    .giftAnimation {
+        position: absolute;
+        height: 9vh;
+        width: 5.76vw;
+        left: 47%;
+        top: 64%;
+        z-index: 10;
+        background-color: black;
     }
 
     
             /*Animations*/
             /*-------------------------------------------*/
-                #present:hover{
-                    height: 8vh;
+                .giftAnimation:hover > #present {
+                  animation-play-state: running;
+                }
+
+                .giftAnimation:hover > #mushroom {
+                   animation-play-state: running;
+
+                }
+
+                @keyframes noenoe {
+                    from {display: block;}
+                    to {display: none;}
+                    
                 }
             /*-------------------------------------------*/
 
