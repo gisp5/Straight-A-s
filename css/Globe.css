@@ -40,10 +40,10 @@ body {
 }
 
 @keyframes earth {
-    0%{
+    0% {
         background-position: 0 0; 
     }
-    100%{
+    100% {
         background-position: 1000px 0;
     }
 }
@@ -63,7 +63,7 @@ body {
     0% {
         top: 0;
     }
-    50%{ 
+    50% { 
         top: 1%;
     }
     100% {
@@ -73,11 +73,11 @@ body {
 /*-----------------------------------------------------------------*/
 
 /*Rocket ----------------------------------------------------------*/
-#spaceshuttle>*{
+#spaceshuttle> * {
     position: absolute;
 }
 
-#lego-rocket{
+#lego-rocket {
     z-index: 4;
     width: 7vw;
     top: 30%;
@@ -102,12 +102,12 @@ body {
 /*-----------------------------------------------------------------*/
 
 /*Spacemen --------------------------------------------------------*/
-#spacemen>*{
+#spacemen> * {
     position: absolute;
     z-index: 4;
 }
 
-#spaceman-1{
+#spaceman-1 {
     width: 11vw;
     top: 50%;
     right: 5%;
@@ -130,7 +130,7 @@ body {
     }
 }
 
-@keyframes spaceman1Spin{
+@keyframes spaceman1Spin {
     0% {
         transform: rotate(45deg);
     }
@@ -140,7 +140,6 @@ body {
     100% {
         transform: rotate(380deg);
     }
-
 }
 
 
@@ -169,9 +168,15 @@ body {
 }
 
 @keyframes spaceman2Spin {
-    0% {transform: rotate(45deg);}
-    50% {transform: rotate(180deg);}
-    100% {transform: rotate(380deg);}
+    0% {
+        transform: rotate(-45deg);
+    }
+    50% {
+        transform: rotate(-180deg);
+    }
+    100% {
+        transform: rotate(-340deg);
+    }
 }
 
 #its-all-lego {
@@ -195,7 +200,6 @@ body {
         top: 67%;
     } 
 }
-
 /*---------------------------------------------------------------------*/
 
 /*Extraterrestrial ----------------------------------------------------*/
@@ -211,7 +215,6 @@ body {
     opacity: 0.1;
     transform: rotate(-15deg);
     animation: ufoBobbing 6s linear infinite;
-    
 }
 
 #lego-ufo:hover {
@@ -219,15 +222,27 @@ body {
 }
 
 @keyframes ufoBobbing {
-    0% {top: 40%;}
-    50% {top: 44%;}
-    100% {top: 40%;}
+    0% {
+        top: 40%;
+    }
+    50% {
+        top: 44%;
+    }
+    100% {
+        top: 40%;
+    }
 }
 
 @keyframes ufoVisibility {
-    0% {opacity: 0.1;} 
-    50% {opacity: 0.5;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 0.1;
+    } 
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 #lego-alien {
@@ -245,21 +260,31 @@ body {
 }
 
 @keyframes alienBob {
-    0% {top: 45%;}
-    50% {top: 47%;}
-    100% {top: 45%;}
+    0% {
+        top: 45%;}
+
+    50% {
+        top: 47%;
+    }
+    100% {
+        top: 45%;
+    }
 }
 
 @keyframes alienVisibility {
-    0% {opacity: 0.1;}
-    50% {opacity: 0.5;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 0.1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
 }
-
 /*---------------------------------------------------------------------*/
 
 /*Santa's Sleigh ------------------------------------------------------*/
-
 #santa-sleigh {
     position: relative;
     justify-content: center;
