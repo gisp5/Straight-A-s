@@ -41,8 +41,6 @@ display: none;}
     height: 7vh;
 }
 
-  display: flex;
-}
 .tree {
     position: absolute;
     z-index: 99;
@@ -126,13 +124,17 @@ display: none;}
 
 
 /*sky*
-    /*-------------------------------------------*/
+/*-------------------------------------------*/
 
     .moon {display: none;}
 
-    #relMoon {}
+    #relMoon {
 
-    #legoMoon {}
+    }
+
+    #legoMoon {
+
+    }
 
 /*-------------------------------------------*/
 
@@ -158,21 +160,37 @@ display: none;}
 
     .tree {display: none;}
 
-    .bigTree {}
+    .bigTree {
 
-    .smalTree {}
+    }
 
-    .tree1 {}
+    .smalTree {
 
-    .tree2 {}
+    }
 
-    .tree3 {}
+    .tree1 {
 
-    .tree4 {}
+    }
 
-    .tree5 {}
+    .tree2 {
 
-    .tree6 {}
+    }
+
+    .tree3 {
+
+    }
+
+    .tree4 {
+
+    }
+
+    .tree5 {
+
+    }
+
+    .tree6 {
+        
+    }
 
 /*-------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
