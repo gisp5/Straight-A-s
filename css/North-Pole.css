@@ -1,14 +1,20 @@
 #container {
-    background-color: rgb(10, 0, 100);
+    background-color: rgb(18, 26, 51);
     z-index: 1;
     height: 100vh;
     width: 100vw;
     position: absolute;
     overflow:hidden;
 }
+#cloudBackground{
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
 
 #snowBackground{
-    z-index: 1;
+    z-index: 2;
     height: 100vh;
     width: 100vw;
     position: absolute;
@@ -258,13 +264,14 @@
     z-index: 3;
 }
 
+/* Sekken som gavene detter ned i */
+
 #giftbag{
     position: absolute;
     bottom: 12%;
     right: 15.5%;
     z-index: 2;
     height:30%;
-    
 }
 
 /* Nissens hjelpere som står bak båndet */
@@ -309,42 +316,49 @@
     position: absolute;
     z-index: 7;
     height:20%;
-    animation-duration: 300s;
+    animation-duration: 360s;
     animation-iteration-count: infinite;
 }
 
 #cloud1{
     top:7%;
-    left: -10%;
+    left: -20%;
     animation-name: cloudMovement1
 }
 
 #cloud2{
     top:5%;
-    left: 20%;
+    left: -20%;
     transform: scale(1.5);
     animation-name: cloudMovement2;
+    animation-delay: 30s;
 }
 
 #cloud3{
-    top: 10%;
+    top: 0%;
     left: 35%;
     transform: scale(0.8);
 
+}
+
+#cloud4{
+    top:3%;
+    left: 65%;
+    transform: scale(1);
 }
 
 /* Animasjon av skyer */
 
 @keyframes cloudMovement1{
     0%{top:7%;
-        left: -10%;}
+        left: -20%;}
     100%{top: 7%;
         left: 130%;}
 }
 
 @keyframes cloudMovement2{
     0%{top:5%;
-        left: 20%;}
+        left: -20%;}
     100%{top: 5%;
         left: 130%;}
 }
