@@ -89,37 +89,58 @@ body{
 
 /*Spacemen --------------------------------------------------------*/
 
-#always-has-been-gun{
+#spaceman-1{
     position: absolute;
     z-index: 5;
     width: 20vh;
     top: 50%;
     right: 5%;
     transform: rotate(20deg);
-    animation: alwaysHasBeenGun 3s linear infinite;   
+    animation: spaceman1Float 3s linear infinite;   
+}
+#spaceman-1:hover{
+    animation: spaceman1Spin 2s linear forwards;
 }
 
-@keyframes alwaysHasBeenGun {
+@keyframes spaceman1Float {
     0% {top: 50;}
     50%{ top: 52%;  transform: rotate(-5deg);} 
     100% {top: 50;}
 }
 
-#always-has-been-victim{
+@keyframes spaceman1Spin{
+    0% {transform: rotate(45deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(380deg);}
+}
+
+
+#spaceman-2{
     position: absolute;
     z-index: 5;
     width: 5vh;
     top: 50%;
     right: 14%;
     transform: rotate(20deg);
-    animation: alwaysHasBeenVictim 4s linear infinite;
+    animation: spaceman2Float 4s linear infinite;
 }
 
-@keyframes alwaysHasBeenVictim {
+#spaceman-2:hover{
+    animation: spaceman2Spin 2s linear forwards;
+}
+
+@keyframes spaceman2Float {
     100% {top: 50;}
     50%{ top: 54%; transform: rotate(35deg);}
     0% {top: 50;}
 }
+
+@keyframes spaceman2Spin{
+    0% {transform: rotate(45deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(380deg);}
+}
+
 /*---------------------------------------------------------------------*/
 
 /*Extraterrestrial ----------------------------------------------------*/
