@@ -340,6 +340,7 @@
     height:20%;
     animation-duration: 360s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 #cloud1{
@@ -353,20 +354,23 @@
     left: -20%;
     transform: scale(1.5);
     animation-name: cloudMovement2;
-    animation-delay: 30s;
+    animation-delay: 60s;
 }
 
 #cloud3{
     top: 0%;
-    left: 35%;
+    left: -20%;
     transform: scale(0.8);
-
+    animation-name: cloudMovement3;
+    animation-delay: 100s;
 }
 
 #cloud4{
     top:3%;
-    left: 65%;
+    left: -20%;
     transform: scale(1);
+    animation-delay: 150s;
+    animation-name: cloudMovement4;
 }
 
 /* Animasjon av skyer */
@@ -385,13 +389,26 @@
         left: 130%;}
 }
 
+@keyframes cloudMovement3{
+    0%{top:0%;
+        left: -20%;}
+    100%{top: 0%;
+        left: 130%;}
+}
+
+@keyframes cloudMovement4{
+    0%{top:10%;
+        left: -20%;}
+    100%{top: 10%;
+        left: 130%;}
+}
 /* Fellesboks for snøfnugg */
 
 .snow{
     position:absolute;
     height: 5%;
     left: 5%;
-    top: 20%;
+    top: -20%;
     z-index: 5;
     animation-duration: 10s;
     animation-timing-function: linear;
