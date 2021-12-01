@@ -7,11 +7,11 @@ body{
     width: 100%;
     height: 100%;
 
-    position: relative;
+    position: absolute;
 }
 
 .normalFrame {
-    display: none;
+    display: noen;
 }
 
 .legoFrame {
@@ -22,6 +22,14 @@ body{
 /*sky*
     /*-------------------------------------------*/
 
+    #santaSleigh {
+        position: absolute;
+        height: 9vh;
+        z-index: 4;
+        right: 30%;
+        animation: santaRide 20s 1 linear forwards;
+            }
+
     .moon {
         height: 15vh;
         position: absolute;
@@ -30,11 +38,19 @@ body{
 
         z-index: 3;
 
-        animation: moonBob 2s linear infinite;}
+        animation: moonBob 1s linear infinite;}
 
-    #relMoon {}
+    #relMoon {
+        opacity: 1;
+        animation: getGround 10s  forwards linear;
 
-    #legoMoon {}
+    }
+
+    #legoMoon {
+        opacity: 0;
+        animation: getGround 10s reverse forwards linear;
+
+    }
 
             /*Animations*/
             /*-------------------------------------------*/
@@ -42,6 +58,34 @@ body{
                 0% {top: 0;}
                 50%{ top: 1%;}
                 100% {top: 0;}
+            }
+
+            @keyframes santaRide {
+
+                0%{
+                    right: -10%;
+                    top: 20%;
+                }
+                25%{
+                    right: 17%;
+                    top: 10%;
+                    z-index: 2;
+                }
+                30%{
+                    transform: rotatey(180deg)
+                }
+                50%{
+                    right: -2%;
+                    top: 3%;
+                    z-index: 4;
+                    transform: rotatey(0deg);
+                }
+                100%{
+                    right: 100%;
+                    top: 3%
+                }
+                
+                
             }
             /*-------------------------------------------*/
 
@@ -58,6 +102,36 @@ body{
 
         z-index: 3;
     }
+    #relGround{
+        opacity: 1;
+        animation: getGround 10s forwards linear;
+    }
+
+    #legoGround{
+        opacity: 0;
+        animation: getGround 10s reverse forwards linear;
+    }
+
+    #relRoad{
+        opacity: 1;
+        animation: getGround 10s forwards linear;
+    }
+
+    #legoRoad{
+        opacity: 0;
+        animation: getGround 10s reverse forwards linear;
+    }
+
+
+    @keyframes getGround {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+        
+    }
 
     .bigCenterTree {
         height: 78vh ;
@@ -67,6 +141,17 @@ body{
 
         z-index: 5;
     }
+
+
+    #legoBigCenterTree{
+        opacity: 0;
+        animation: getGround 10s reverse forwards linear;
+    }
+    #relBigCenterTree{
+        opacity: 1;
+        animation: getGround 10s forwards linear;
+    }
+
     .road {
         height: 55vh;
 
@@ -178,5 +263,88 @@ body{
         top: 40%;
     }
 
+    #legoTree1{
+        opacity: 0;
+        animation: getGround 10s reverse forwards linear;
+    }
+    #legoTree2{
+        opacity: 0;
+        animation: getGround 10s reverse forwards linear;
+    }
+    #legoTree3{
+        opacity: 0;
+        animation: getGround 10s reverse forwards linear;
+    }
+    #legoTree4{
+        opacity: 0;
+        animation: getGround 10s reverse forwards linear;
+    }
+    #legoTree5{
+        opacity: 0;
+        animation: getGround 10s reverse forwards linear;
+    }
+    #legoTree6{
+        opacity: 0;
+        animation: getGround 10s reverse forwards linear;
+    }
+
+    #relTree1{
+        opacity: 1;
+        animation: getGround 10s forwards linear;
+    }
+    #relTree2{
+        opacity: 1;
+        animation: getGround 10s forwards linear;
+    }
+    #relTree3{
+        opacity: 1;
+        animation: getGround 10s forwards linear;
+    }
+    #relTree4{
+        opacity: 1;
+        animation: getGround 10s forwards linear;
+    }
+    #relTree5{
+        opacity: 1;
+        animation: getGround 10s forwards linear;
+    }
+    #relTree6{
+        opacity: 1;
+        animation: getGround 10s forwards linear;
+    }
+
+
+
+
+
+
+
+
+
+    
+    #sleigh {
+        position: absolute;
+        height: 30vh;
+        z-index: 7;
+        right: -30%;
+        top: 75%;
+        opacity: 1;
+        animation: sleighInn 5s 20s  1 ease-out forwards;
+    }
+
+
+    @keyframes sleighInn {
+        from{
+            top: 75%;
+            right: -30%;
+            opacity: 1;
+        }
+        to{
+            right: 0;
+            top: 75%;
+            opacity: 1;
+        }
+        
+    }
 /*-------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/

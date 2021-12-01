@@ -217,6 +217,26 @@
         right: 100%;}            
 }
 
+#signpostToTheWorld {
+    position: absolute;
+    z-index: 3;
+    width: 10vw;
+    left: 5%;
+    top: 50%;
+}
+
+#snowTop {
+    position: absolute;
+    z-index: 2;
+    background: lightskyblue;
+    top: 62%;
+    left: 7.5%;
+    width: 5vw;
+    height: 5vh;
+    border-radius: 100%;
+    
+}
+
 #house2{
     position: absolute;
     bottom: 20%;

@@ -3,21 +3,42 @@ body {
     overflow: hidden;
 }
 /*-----------------------------------------------------------------*/
+/*Santa's House----------------------------------------------------*/
+#santasHouse {
+    position: absolute;
+    justify-content: center;
+    z-index: 4;
+    width: 5vw;
+    top: 1%;
+    left: 48%;
+}
+
+#santasHouse:hover {
+    animation: santasHouseAnimation 0.1s linear forwards;
+}
+
+@keyframes santasHouseAnimation {
+    100% {
+        left: 47%;
+        width: 7vw;
+    }
+}
+/*-----------------------------------------------------------------*/
 
 /*The World -------------------------------------------------------*/
-#earth-section {
+#earthSection {
     position: absolute;
     justify-content: center;
     width: 100vw;
     height: 100vh;
 }
 
-#earth-section> * {
+#earthSection> * {
     position: absolute;
     justify-content: center;
 }
 
-#earth-div {
+#earthDiv {
     position: relative;
     justify-content: center;
     z-index: 3; 
@@ -31,12 +52,6 @@ body {
     left: 33%;
     box-shadow: inset 10px 0 50px black, 0 0 500px; 
     animation: earth 100s linear infinite;
-}
-
-#earth-div:hover {
-    transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: ease-in-out;
 }
 
 @keyframes earth {
@@ -107,14 +122,14 @@ body {
     z-index: 4;
 }
 
-#spaceman-1 {
+#spaceman1 {
     width: 11vw;
     top: 50%;
     right: 5%;
     transform: rotate(20deg);
     animation: spaceman1Float 3s linear infinite;   
 }
-#spaceman-1:hover{
+#spaceman1:hover{
     animation: spaceman1Spin 2s linear forwards;
 }
 
@@ -143,7 +158,7 @@ body {
 }
 
 
-#spaceman-2 {
+#spaceman2 {
     width: 2.5vw;
     top: 50%;
     right: 14%;
@@ -151,7 +166,7 @@ body {
     animation: spaceman2Float 4s linear infinite;
 }
 
-#spaceman-2:hover {
+#spaceman2:hover {
     animation: spaceman2Spin 2s linear forwards;
 }
 
@@ -179,13 +194,7 @@ body {
     }
 }
 
-#space-video{
-    position: absolute;
-    z-index: 4;
-    top: 50%;
-    left: 50%;
-}
-/*#its-all-lego {
+#itsAllLego {
     z-index: 4;
     width: 15vw;
     top: 67%;
@@ -195,7 +204,7 @@ body {
     animation: itsAllLegoPictureAnimation 3s linear infinite;
 }
 
-#its-all-lego:hover{
+#itsAllLego:hover{
     opacity: 1;
 }
 
@@ -209,15 +218,15 @@ body {
     100% {
         top: 67%;
     } 
-}*/
+}
 /*---------------------------------------------------------------------*/
 
 /*Extraterrestrial ----------------------------------------------------*/
-#extraterrestrial-section> * {
+#extraterrestrialSection> * {
     position: absolute;
 }
 
-#lego-ufo {
+#legoUfo {
     z-index: 4;
     width: 10vw;
     top: 40%;
@@ -227,7 +236,7 @@ body {
     animation: ufoBobbing 6s linear infinite;
 }
 
-#lego-ufo:hover {
+#legoUfo:hover {
     animation: ufoVisibility 1s linear forwards;
 }
 
@@ -255,7 +264,7 @@ body {
     }
 }
 
-#lego-alien {
+#legoAlien {
     z-index: 4;
     width: 3vw;
     top: 45%;
@@ -265,7 +274,7 @@ body {
     animation: alienBob 3s linear infinite;   
 }
 
-#lego-alien:hover {
+#legoAlien:hover {
     animation: alienVisibility 1s linear forwards;
 }
 
@@ -295,7 +304,7 @@ body {
 /*---------------------------------------------------------------------*/
 
 /*Santa's Sleigh ------------------------------------------------------*/
-#santa-sleigh {
+#santaSleigh {
     position: relative;
     justify-content: center;
     z-index: 3;
@@ -307,7 +316,7 @@ body {
     border-radius: 20%;
 }
 
-#sleigh-shadow {
+#sleighShadow {
     position: absolute;
     justify-content: center;
     z-index: 2;
@@ -319,7 +328,7 @@ body {
     border-radius: 20%;
 }
 
-#sleigh-rim {
+#sleighRim {
     position: absolute;
     justify-content: center;
     display: flex;
@@ -341,7 +350,7 @@ body {
 } 
 
     /*Santa -----------------------------------------------------------*/
-    #santa-legs {
+    #santaLegs {
     position: relative;
     justify-content: center;
     z-index: 4; 
@@ -352,7 +361,7 @@ body {
     transform: rotate(180deg);
     }
 
-    #santa-arms {
+    #santaArms {
     position: relative;
     justify-content: center;
     z-index: 4;
