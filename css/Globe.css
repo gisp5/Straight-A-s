@@ -179,7 +179,13 @@ body {
     }
 }
 
-#its-all-lego {
+#space-video{
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+}
+/*#its-all-lego {
     z-index: 4;
     width: 15vw;
     top: 67%;
@@ -187,6 +193,10 @@ body {
     opacity: 0;
     transform: rotate(15deg);
     animation: itsAllLegoPictureAnimation 3s linear infinite;
+}
+
+#its-all-lego:hover{
+    opacity: 1;
 }
 
 @keyframes itsAllLegoPictureAnimation {
@@ -199,7 +209,7 @@ body {
     100% {
         top: 67%;
     } 
-}
+}*/
 /*---------------------------------------------------------------------*/
 
 /*Extraterrestrial ----------------------------------------------------*/
