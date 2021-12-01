@@ -90,15 +90,20 @@ body{
                     right: 17%;
                     top: 10%;
                     z-index: 2;
+                    transform: rotatey(0deg);
+                    transform: rotateZ(15deg)
                 }
                 30%{
-                    transform: rotatey(180deg)
+                    transform: rotatey(180deg);
                 }
                 50%{
                     right: -2%;
                     top: 3%;
+                    transform: rotatey(180deg);
+                }
+                55%{
+                    transform: rotate(0deg);
                     z-index: 4;
-                    transform: rotatey(0deg);
                 }
                 100%{
                     right: 100%;
@@ -165,26 +170,29 @@ body{
 
     #legoBigCenterTree{
         opacity: 1;
+        top: -100%;
+        animation: liftOf 10s 10s reverse forwards linear;
     }
     #relBigCenterTree{
         opacity: 1;
-        animation: liftOf 10s infinite linear;
+        animation: liftOf 10s forwards linear;
     }
 
 
     @keyframes liftOf {
         0% {left: 34%;
             top: 0%}
-        5%{left: 35%;}
-        10%{left: 33%;}
-        15%{left: 35%;}
-        20%{left: 33%;}
-        25%{left: 35%;}
-        30%{left: 33%;}       
-        35%{left: 35%;}
-        40%{left: 33%;}
-        45%{left: 34%;}
-        50%{ top: -100%}  
+        5%{left: 36%;}
+        10%{left: 32%;}
+        15%{left: 36%;}
+        20%{left: 32%;}
+        25%{left: 36%;}
+        30%{left: 32%;}       
+        35%{left: 36%;}
+        40%{left: 32%;}
+        45%{left: 36%;}
+        50%{top: 0%;}
+        100%{ top: -100%}  
     }
 
     .road {
@@ -349,12 +357,18 @@ body{
     }
 
 
-
-
-
-
-
-
+@keyframes three1 {
+    
+}
+@keyframes three2 {
+    
+}
+@keyframes three3 {
+    
+}
+@keyframes three4 {
+    
+}
 
     
     #sleigh {

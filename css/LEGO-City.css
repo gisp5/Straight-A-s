@@ -32,7 +32,7 @@ body{
 	height: 40vh;
 }
 #house1 {
-	z-index: 4;
+	z-index: 6;
 	display: flex;
 	justify-content: center;
 	top: -20%;
@@ -42,7 +42,7 @@ body{
 	}
 
 #house2 {
-	z-index: 4;
+	z-index: 6;
 	display: flex;
 	justify-content: center;
 	top: -20%;
@@ -52,7 +52,7 @@ body{
 	}
 
 #house3 {
-	z-index: 4;
+	z-index: 6;
 	display: flex;
 	justify-content: center;
 	top: -20%;
@@ -61,7 +61,7 @@ body{
 	height: 85vh;
 	}
 #house4 {
-	z-index: 3;
+	z-index: 5;
 	display: flex;
 	justify-content: center;
 	top: 5%;
@@ -71,7 +71,7 @@ body{
 	}
 
 #balconyWoman {
-	z-index: 2;
+	z-index: 4;
 	display: flex;
 	justify-content: center;
 	top: 12.5%;
@@ -134,11 +134,11 @@ body{
 
 .legoTaxi {
 	position: absolute;
-	z-index: 5;
+	z-index: 6;
 	right: -10%;
 	bottom: 19%;
 	height: 15vh;
-	width: 20vw;
+	width: 17vw;
 	animation: taxi 6s linear forwards;
 }
 
@@ -154,18 +154,42 @@ body{
 	}
 }
 
+#legoMan {
+	position: absolute;
+	z-index: 5;
+	width: 1.2vw;
+	height: 12.5vh;
+	top: 54.5%;
+	left: 15%;
+	animation: legoMan 3s linear forwards;
+}
+
+@keyframes legoMan {
+	0% {
+		top: 54.5%;
+		left: 15%;
+	}
+	99% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		top: 54.5%;
+		left: 40%;
+	}
+}
+
 #legoManArmless {
 	position: absolute;
-	z-index: 4;
+	z-index: 5;
 	width: 15vw;
 	height: 20vh;
 	top: 50%;
 	left: 33%;
 	opacity: 0;
-	animation: legoManStop 0s linear forwards;
-	animation-delay: 6s;
+	animation: legoManAppear 0s linear 3s forwards;
 }
-@keyframes legoManStop{
+@keyframes legoManAppear{
 	0% {
 		opacity: 0;
 	}
@@ -178,13 +202,13 @@ body{
 
 #legoArm {
 	position: absolute;
-	z-index: 4;
+	z-index: 5;
 	width: 3vw;
 	height: 13vh;
 	top: 54%;
 	left: 39.1%;
-	opacity: 1;
-	animation: armimation 0.5s linear 2s forwards
+	opacity: 0;
+	animation: armimation 0.5s linear 3s forwards
 
 }
 
@@ -223,5 +247,38 @@ body{
 	}
 }
 
+#sleigh {
+	z-index: 4;
+	top: -0%;
+	right: 540%;
+	width: 20vw;
+	height: 20vh;
+	transform: rotateY(180deg);
+	animation: moveSleigh 2s linear forwards;
+}
 
+@keyframes moveSleigh {
+	0% {
+		top: -30%;
+		right: 540%;
+		transform: rotateY(180deg) rotate(-20deg);
 
+	}
+	100% {
+		top: 3.5%;
+		left: 30%;
+		transform: rotate(0deg) rotateY(180deg);
+
+	}
+}
+#present {
+	z-index: 2;
+	width: 3vw;
+	height: 5vh;
+	left: 10%;
+
+}
+
+#sleigh:hover + #present {
+	opacity: 0;
+}
