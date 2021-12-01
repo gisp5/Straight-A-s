@@ -1,6 +1,5 @@
 body{
     overflow: hidden;
-    position: relative;
 }
 /*frame*/
 /*---------------------------------------------------------------------------------------*/
@@ -28,7 +27,7 @@ body{
         height: 9vh;
         z-index: 4;
         right: 30%;
-        animation: santaRide 20s linear;
+        animation: santaRide 20s 1 linear forwards;
             }
 
     .moon {
@@ -41,9 +40,13 @@ body{
 
         animation: moonBob 20s linear;}
 
-    #relMoon {}
+    #relMoon {
+        opacity: 1;
+    }
 
-    #legoMoon {}
+    #legoMoon {
+        opacity: 0;
+    }
 
             /*Animations*/
             /*-------------------------------------------*/
@@ -94,6 +97,36 @@ body{
         position: absolute;
 
         z-index: 3;
+    }
+    #relGround{
+        opacity: 1;
+        animation: getGround 10s forwards linear;
+    }
+
+    #legoGround{
+        opacity: 0;
+        animation: getGround 10s reverse forwards linear;
+    }
+
+    #relRoad{
+        opacity: 1;
+        animation: getGround 10s forwards linear;
+    }
+
+    #legoRoad{
+        opacity: 0;
+        animation: getGround 10s reverse forwards linear;
+    }
+
+
+    @keyframes getGround {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+        
     }
 
     .bigCenterTree {
