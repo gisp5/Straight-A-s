@@ -248,9 +248,7 @@ body{
 }
 
 #sleigh {
-	z-index: 4;
-	top: -0%;
-	right: 540%;
+	z-index: 5;
 	width: 20vw;
 	height: 20vh;
 	transform: rotateY(180deg);
@@ -272,13 +270,35 @@ body{
 	}
 }
 #present {
-	z-index: 2;
+	z-index: 5;
 	width: 3vw;
 	height: 5vh;
-	left: 10%;
-
+    opacity: 0;
+    animation-name: presentAni;
+	animation-play-state: paused;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function:linear;
 }
 
 #sleigh:hover + #present {
-	opacity: 0;
+    animation-play-state: running;
+}
+
+@keyframes presentAni {
+	0%{
+		opacity:0;
+		left: 32%;
+		top: 9%;}
+
+	5% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 1;
+		left: 38%;
+		top: 53%
+	}
 }
