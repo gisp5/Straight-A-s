@@ -14,7 +14,7 @@ body{
 }
 
 .legoFrame {
-    display: none;
+    display: block;
 }
 
 
@@ -82,8 +82,7 @@ body{
         width: 4.5vw;
 
         position: absolute;
-        display: block;
-    
+        display: block;   
         z-index: 4;
         animation-name: noenoe;
     }
@@ -92,11 +91,13 @@ body{
         width: 5.76vw;
 
         position: absolute;
-        display: none;
-    
-        z-index: 9;
-    animation-name: noenoe;
-}
+        display: none;  
+        z-index: 5; 
+        animation: nienei 1s linear forwards;}
+    #linkMush{
+        height: 9vh;
+        width: 5.76vw;
+    }
     .giftAnimation {
         position: absolute;
         height: 9vh;
@@ -104,25 +105,28 @@ body{
         left: 47%;
         top: 64%;
         z-index: 10;
-        background-color: black;
     }
 
     
             /*Animations*/
             /*-------------------------------------------*/
-                .giftAnimation:hover > #present {
-                  animation-play-state: running;
+                .giftAnimation:hover > #present{
+                    display: none;
                 }
 
-                .giftAnimation:hover > #mushroom {
-                   animation-play-state: running;
-
+                .giftAnimation:hover > a > #mushroom{
+                    display: block;
+                    z-index: 20;
                 }
 
                 @keyframes noenoe {
-                    from {display: block;}
-                    to {display: none;}
-                    
+                    0% {opacity: 1;}
+                    100% {opacity: 0;}
+                }
+
+                @keyframes noenei {
+                    from {opacity: 0;}
+                    to {opacity: 1;}
                 }
             /*-------------------------------------------*/
 
