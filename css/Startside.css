@@ -27,9 +27,13 @@ body{
         height: 9vh;
         z-index: 4;
         right: 30%;
-        animation: santaRide 20s 1 linear forwards;
+        animation: santaRide 20s 10s 1 linear forwards;
             }
-
+    
+        #santaSleigh:hover{
+            transform: scale(1.1);
+        }     
+    
     .moon {
         height: 15vh;
         position: absolute;
@@ -38,11 +42,11 @@ body{
 
         z-index: 3;
 
-        animation: legoMoonSpin 10s forwards linear;}
+        animation: legoMoonSpin 10s 10s forwards linear;}
 
     #relMoon {
         opacity: 1;
-        animation: moonSpin 10s  forwards linear;
+        animation: moonSpin 10s 10s  forwards linear;
 
     }
 
@@ -129,22 +133,22 @@ body{
     }
     #relGround{
         opacity: 1;
-        animation: getGround 10s forwards linear;
+        animation: getGround 10s 20s  forwards linear;
     }
 
     #legoGround{
         opacity: 0;
-        animation: getGround 10s reverse forwards linear;
+        animation: getGround 10s 20s reverse forwards linear;
     }
 
     #relRoad{
         opacity: 1;
-        animation: getGround 10s forwards linear;
+        animation: getGround 10s 20s forwards linear;
     }
 
     #legoRoad{
         opacity: 0;
-        animation: getGround 10s reverse forwards linear;
+        animation: getGround 10s 20s reverse forwards linear;
     }
 
 
@@ -358,6 +362,7 @@ body{
 
 
 @keyframes three1 {
+
     
 }
 @keyframes three2 {
@@ -378,7 +383,7 @@ body{
         right: -30%;
         top: 75%;
         opacity: 1;
-        animation: sleighInn 5s 20s  1 ease-out forwards;
+        animation: sleighInn 5s 30s  1 ease-out forwards;
     }
 
 
