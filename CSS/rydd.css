@@ -20,124 +20,6 @@ body {
 }
 
 
-/*sky*
-    /*-------------------------------------------*/
-
-#santaSleigh {
-    position: absolute;
-    height: 9vh;
-    z-index: 4;
-    right: -30%;
-    animation: santaRide 20s 10s 1 linear forwards;
-}
-
-#santaSleigh:hover {
-    transform: scale(1.2);
-}
-
-.moon {
-    height: 15vh;
-    position: absolute;
-    right: 5%;
-    top: 0;
-
-    z-index: 3;
-
-    animation: legoMoonSpin 10s 10s forwards linear;
-}
-
-#relMoon {
-    opacity: 1;
-    animation: moonSpin 10s 10s forwards linear;
-
-}
-
-#legoMoon {
-    opacity: 0;
-
-}
-
-/*Animations*/
-/*-------------------------------------------*/
-@keyframes moonBob {
-    0% {
-        top: 0;
-    }
-
-    50% {
-        top: 1%;
-    }
-
-    100% {
-        top: 0;
-    }
-}
-
-@keyframes moonSpin {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        transform: rotate(1800deg);
-        opacity: 0;
-    }
-
-}
-
-@keyframes legoMoonSpin {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        transform: rotate(1800deg);
-        opacity: 1;
-    }
-
-}
-
-@keyframes santaRide {
-
-    0% {
-        right: -10%;
-        top: 20%;
-        z-index: 99;
-    }
-
-    25% {
-        right: 17%;
-        top: 10%;
-        z-index: 2;
-        transform: rotatey(0deg);
-        transform: rotateZ(15deg)
-    }
-
-    30% {
-        transform: rotatey(180deg);
-    }
-
-    50% {
-        right: -2%;
-        top: 3%;
-        transform: rotatey(180deg);
-    }
-
-    55% {
-        transform: rotate(0deg);
-        z-index: 4;
-    }
-
-    100% {
-        right: 100%;
-        top: 3%
-    }
-
-
-}
-
-/*-------------------------------------------*/
-
 /*-------------------------------------------*/
 
 /*Image Center*/
@@ -190,7 +72,7 @@ body {
     position: absolute;
     left: 34%;
 
-    z-index: 5;
+    z-index: 5;F
 }
 
 
@@ -267,75 +149,8 @@ body {
     z-index: 4;
 }
 
-#present {
-    height: 7vh;
-    width: 4.5vw;
-
-    position: absolute;
-    display: block;
-    z-index: 4;
-    animation-name: noenoe;
-}
-
-#mushroom {
-    height: 9vh;
-    width: 5.76vw;
-
-    position: absolute;
-    display: none;
-    z-index: 5;
-    animation: nienei 1s linear forwards;
-}
-
-#linkMush {
-    height: 9vh;
-    width: 5.76vw;
-}
-
-.giftAnimation {
-    position: absolute;
-    height: 9vh;
-    width: 5.76vw;
-    left: 47%;
-    top: 64%;
-    z-index: 10;
-}
 
 
-/*Animations*/
-/*-------------------------------------------*/
-.giftAnimation:hover>#present {
-    display: none;
-}
-
-.giftAnimation:hover>a>#mushroom {
-    display: block;
-    z-index: 20;
-}
-
-@keyframes noenoe {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes noenei {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-/*-------------------------------------------*/
-
-/*-------------------------------------------*/
 
 /*Forest*/
 /*-------------------------------------------*/
@@ -386,7 +201,7 @@ body {
 
 #legoTree2 {
     transform: scale(0);
-    animation: three2 1s  1 forwards  reverse linear paused;
+    animation: three2 1s 1 forwards reverse linear paused;
 }
 
 #legoTree3 {
@@ -400,7 +215,7 @@ body {
 }
 
 #legoTree5 {
-    animation: three4 1s  1 forwards  reverse linear paused;
+    animation: three4 1s 1 forwards reverse linear paused;
 }
 
 #legoTree6 {
@@ -415,7 +230,7 @@ body {
 
 #relTree2 {
     opacity: 1;
-    animation: three2 1s  1 forwards   linear paused;
+    animation: three2 1s 1 forwards linear paused;
 }
 
 #relTree3 {
@@ -430,8 +245,8 @@ body {
 
 #relTree5 {
     opacity: 1;
-    animation: three4 1s  1 forwards linear paused;
-    
+    animation: three4 1s 1 forwards linear paused;
+
 }
 
 #relTree6 {
