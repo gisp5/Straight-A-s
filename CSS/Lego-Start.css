@@ -29,7 +29,11 @@ body{
 
         #legoMoon {
             opacity: 0;
-            animation: legoMoonSpin 10s 10s forwards linear;
+            animation: legoMoonSpin 10s 10s 1 linear;
+        }
+        #legoMoonBob{
+            z-index: 0;
+            animation: moonBob 2s 20s forwards linear infinite;
 
         }
 
@@ -47,11 +51,11 @@ body{
 
         /*Moon Animations*/
             @keyframes moonBob {
-                0% {top: 0; 
-                    opacity: 1;}
+                0% {top: 4; 
+                    z-index: 4;}
                 50%{ top: 1%;}
                 100% {top: 0;
-                    opacity: 1;}
+                    z-index: 4;}
             }
             
 
@@ -325,12 +329,12 @@ body{
         /*Rel Tree*/
         #relTree1 {
             opacity: 1;
-            animation: getGround 10s forwards linear;
+            animation: quickLift 2s 15s forwards linear;
         }
         
         #relTree2 {
             opacity: 1;
-            animation: three2 1s 1 forwards linear paused;
+            animation: bigLittle 1s 1 forwards linear paused;
         }
         
         #relTree3 {
@@ -345,7 +349,7 @@ body{
         
         #relTree5 {
             opacity: 1;
-            animation: three4 1s 1 forwards linear paused;
+            animation: qiuckLift 1s 1 forwards linear paused;
         
         }
         
@@ -358,12 +362,12 @@ body{
         /*Lego Tree*/
         #legoTree1 {
             opacity: 0;
-            animation: getGround 10s reverse forwards linear;
+            animation: quickLift 2s 15s reverse forwards linear;
         }
         
         #legoTree2 {
             transform: scale(0);
-            animation: three2 1s 1 forwards reverse linear paused;
+            animation: bigLittle 1s 1 forwards reverse linear paused;
         }
         
         #legoTree3 {
@@ -378,7 +382,7 @@ body{
         
         #legoTree5 {
             top: -300%;
-            animation: three4 1s 2s 1 forwards reverse linear paused;
+            animation: qiuckLift 1s 2s 1 forwards reverse linear paused;
         }
         
         #legoTree6 {
@@ -420,7 +424,7 @@ body{
         
         }
 
-        @keyframes three2 {
+        @keyframes bigLittle {
             0% {
                 transform: scale(1);
             }
@@ -434,7 +438,7 @@ body{
             }
         }
 
-        @keyframes three4 {
+        @keyframes qiuckLift {
             0% {
                  top: 0%;
             }

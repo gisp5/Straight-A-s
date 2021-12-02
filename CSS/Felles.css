@@ -44,6 +44,22 @@ body{
 }
 /*----------------------------------------------------------------*/
 
+/* Fellesboks for snøfnugg */
+/*---------------------------------------------------------------------------------------*/
+
+.snow{
+    position:absolute;
+    height: 5%;
+    left: 5%;
+    top: -20%;
+    z-index: 5;
+    animation-duration: 11.5s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    
+}
+
 /* snøfnugg animasjoner, med forskjellige intervallerfra 1 - 20, 21-40, 41-60, 61-80 og 81-100 linket videre til 
 animasjoner så hver bolk representerer 1 linje med snø som faller gitt litt forskjellige delay og lengder 
 osv for å få en naturlig effekt */
