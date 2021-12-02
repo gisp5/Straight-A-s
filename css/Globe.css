@@ -140,13 +140,13 @@ body {
 
 @keyframes spaceman1Float {
     0% { 
-        top: 50;
+        top: 50%;
     }
     50% { 
         top: 52%;  transform: rotate(-5deg);}
 
     100% {
-        top: 50;
+        top: 50%;
     }
 }
 
@@ -177,13 +177,14 @@ body {
 
 @keyframes spaceman2Float {
     100% {
-        top: 50;}
+        top: 50%;
+    }
 
     50% { 
         top: 54%; transform: rotate(35deg);
     }
     0% {
-        top: 50;
+        top: 50%;
     }
 }
 
@@ -317,7 +318,7 @@ body {
 
 @keyframes flyingSpaceCow {
     0% {
-       opacity: 0; 
+        opacity: 0; 
     }
     50% {
         top: 25%;
@@ -341,7 +342,6 @@ body {
 #mushroomCloud {
     position: absolute;
     z-index: 4;
-    top: 35%;
     left: 39%; 
     width: 7vw;
     opacity: 0;
@@ -351,7 +351,7 @@ body {
 
 @keyframes mushroomCloudAnimation {
     0% {
-       
+        top: 35%;
     }
     100% {
         top: 30%;
