@@ -220,13 +220,8 @@
     animation-duration: 4s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
-    animation-play-state: paused;
+    
 }
-
-#signpostToTheWorld:hover + #sleigh{
-    animation-play-state: running;
-}
-
 
 /* Animasjon av sleden */
 /*---------------------------------------------------------------------------------------*/
