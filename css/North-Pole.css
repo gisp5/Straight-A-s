@@ -3,11 +3,12 @@
     z-index: 1;
     height: 100vh;
     width: 100vw;
-    position: absolute;
+    position: relative;
     overflow:hidden;
 }
+
 #cloudBackground{
-    z-index: 1;
+    z-index: 2;
     height: 100vh;
     width: 100vw;
     position: absolute;
@@ -29,6 +30,7 @@
 }
 
 /* Bildet av gavemaskinen */
+/*---------------------------------------------------------------------------------------*/
 
 #assemblyLine{
     position: absolute;
@@ -38,6 +40,7 @@
 }
 
 /* Grå div som ligger over bildet av gavemaskinen (Underlaget til beltet) */
+/*---------------------------------------------------------------------------------------*/
 
 #conveyorBelt{
     background-color: rgb(114, 114, 114);
@@ -51,6 +54,7 @@
 }
 
 /* Fellesegenskaper for linjene på beltet */
+/*---------------------------------------------------------------------------------------*/
 
 .belt{
     background-color: rgb(56, 56, 56);
@@ -64,6 +68,7 @@
 }
 
 /*  Linjer lagt over conveyorbelt diven for å få det til å se ut som at beltet beveger seg*/
+/*---------------------------------------------------------------------------------------*/
 
 #belt1{
     right: 0%;
@@ -92,6 +97,7 @@
 }
 
 /* animasjoner til strekene på beltet */
+/*---------------------------------------------------------------------------------------*/
 
 @keyframes belt1Movement{
     0%{right: 1%}
@@ -120,6 +126,7 @@
 }
 
 /* Streker på hjulene på transportbeltet */ 
+/*---------------------------------------------------------------------------------------*/
 
 .wheels{
     background-color: rgb(189, 189, 189);
@@ -149,6 +156,7 @@
 }
 
 /* Animasjon til hjulene */
+/*---------------------------------------------------------------------------------------*/
 
 @keyframes wheelSpin{
     0%{transform: rotate(0deg);}
@@ -156,6 +164,7 @@
 }
 
 /* Gaver på båndet  */
+/*---------------------------------------------------------------------------------------*/
 
 .present{
     position: absolute;
@@ -184,6 +193,7 @@
 }
 
 /* Animasjoner av gavene på båndet */
+/*---------------------------------------------------------------------------------------*/
 
 @keyframes present1Move{
     0%{top: 48%;
@@ -196,6 +206,7 @@
 }
 
 /* Sleden */
+/*---------------------------------------------------------------------------------------*/
 
 #sleigh{
     position: absolute;
@@ -205,13 +216,17 @@
     right: -30%;
     z-index: 5;
     animation-name: sleighTravel1,sleighTravel2;
-    animation-delay: 0s,6s;
+    animation-delay: 0s,10s;
     animation-duration: 4s;
-    animation-timing-function:linear;
+    animation-timing-function: linear;
     animation-fill-mode: forwards;
+    animation-play-state: running;
 }
 
+
 /* Animasjon av sleden */
+/*---------------------------------------------------------------------------------------*/
+
 @keyframes sleighTravel1{
     0%{bottom: 15%;
         right: -30%;
@@ -233,11 +248,13 @@
 }
 
 /* Skilt for linker til de andre siden (verdensrommet og legocity) */
+/*---------------------------------------------------------------------------------------*/
 
 #signpostToTheWorld {
     position: absolute;
     z-index: 3;
     width: 10vw;
+    height: 20vh;
     left: 5%;
     top: 50%;
 }
@@ -255,38 +272,45 @@
 }
 
 /* Linker */
+/*---------------------------------------------------------------------------------------*/
 
-.links{
+a{
     position: absolute;
     z-index: 3;
     color: black;
     text-decoration: none;
+    font-size: 80%;
+   
 }
 
 #spaceLink{
-    top: 53.5%;
+    top: 54%;
     left: 9.5%;
     z-index: 3;
     transform: rotate(-22deg);
 }
 
 #legoCityLink{
-    top: 57%;
-    left: 7.5%;
-    z-index: 3;    
+    top: 57.5%;
+    left: 8%;
+    z-index: 3;
+      
 }
 
-/* Posisjonering av hus */ 
+/* Posisjonering av hus */
+/*---------------------------------------------------------------------------------------*/ 
 
 #house2{
     position: absolute;
     bottom: 20%;
-    right: 40%;
+    right: 30%;
     height: 40%;
+    width:30%; 
     z-index: 3;
 }
 
 /* Sekken som gavene detter ned i */
+/*---------------------------------------------------------------------------------------*/
 
 #giftbag{
     position: absolute;
@@ -294,9 +318,15 @@
     right: 15.5%;
     z-index: 2;
     height:30%;
+    width: 15%;
 }
 
+#giftbag:hover + #sleigh{
+    animation-play-state: running;
+    /*transform: scale(2);*/
+}
 /* Nissens hjelpere som står bak båndet */
+/*---------------------------------------------------------------------------------------*/
 
 #helper1{
     position: absolute;
@@ -322,17 +352,20 @@
     height:7%;
 }
 
-/* Posisjonering av hytte */ 
+/* Posisjonering av hytte */
+/*---------------------------------------------------------------------------------------*/ 
 
 #cottage{
     position: absolute;
     bottom: 20%;
-    right: 65.5%;
+    right: 60.5%;
     z-index: 3;
     height:30%;
+    width: 20%;
 }
 
 /* Skyer*/
+/*---------------------------------------------------------------------------------------*/
 
 .cloud{
     position: absolute;
@@ -374,6 +407,7 @@
 }
 
 /* Animasjon av skyer */
+/*---------------------------------------------------------------------------------------*/
 
 @keyframes cloudMovement1{
     0%{top:7%;
@@ -403,6 +437,7 @@
         left: 130%;}
 }
 /* Fellesboks for snøfnugg */
+/*---------------------------------------------------------------------------------------*/
 
 .snow{
     position:absolute;
@@ -417,8 +452,10 @@
     
 }
 
-/* snøfnugg animasjoner, med forskjellige intervallerfra 1 - 20, 21-40, 41-60 og 61-80 linket videre til animasjoner så hver bolk representerer 1 linje med snø som faller
-gitt litt forskjellige delay og lengder osv for å få en naturlig effekt */
+/* snøfnugg animasjoner, med forskjellige intervallerfra 1 - 20, 21-40, 41-60, 61-80 og 81-100 linket videre til 
+animasjoner så hver bolk representerer 1 linje med snø som faller gitt litt forskjellige delay og lengder 
+osv for å få en naturlig effekt */
+/*--------------------------------------------------------------------------------------------------------------*/
 
 #flake1{
     animation-name: snowflake1;
@@ -921,6 +958,7 @@ gitt litt forskjellige delay og lengder osv for å få en naturlig effekt */
 }
 
 /* Animasjoner for hver enkelt linje med snøfnugg, med litt forskjellig rotasjon lengde avstand og z-index */
+/*----------------------------------------------------------------------------------------------------------*/
 
 @keyframes snowflake1{
     0%{left: 5%;
@@ -934,12 +972,14 @@ gitt litt forskjellige delay og lengder osv for å få en naturlig effekt */
 
 @keyframes snowflake2{
     0%{left: 10%;
-        top: 0%;}
+        top: 0%;
+        z-index: 2;}
     90%{opacity: 1;}    
     100%{left: 10%;
-        top: 82%;
+        top: 61%;
         transform:rotate(180deg);
-        opacity: 0;}
+        opacity: 0;
+        z-index: 2;}
 }
 
 @keyframes snowflake3{
