@@ -9,448 +9,455 @@ body{
     height: 100vh;
 }
 
+
 /*Styling for sky and snow backround*/
 /*---------------------------------------------------------------------------------------*/
 
-.skyContainer{
-    position: absolute;
-    left: 0;
-}
+    .skyContainer{
+        position: absolute;
+        left: 0;
+    }
 
-.sky{
-    width: 100vw;
-}
+    .sky{
+        width: 100vw;
+    }
 
-.snowContainer{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    display: flex;
-    flex-direction: row;
-}
+    .snowContainer{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+    }
 
-.snow{
-    height:40vh;
-}
+    .snow{
+        height:40vh;
+    }
+
 
 /*Stylig for stair*/
 /*---------------------------------------------------------------------------------------*/
 
-.stairsContainer{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    top: 111%;
-    left: 39.8%;
-    z-index: 2; 
-    border: 3px solid red;
-    width: 20%;
-    height: 30%;
-}
+    .stairsContainer{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        top: 111%;
+        left: 39.8%;
+        z-index: 2; 
+        border: 3px solid red;
+        width: 20%;
+        height: 30%;
+    }
 
-.stairs{
-    height: 20vh;
-    transform: rotate(-90deg);
-    border-radius: 5px;
-}
+    .stairs{
+        height: 20vh;
+        transform: rotate(-90deg);
+        border-radius: 5px;
+    }
+
 
 /*Styling for castle*/
 /*---------------------------------------------------------------------------------------*/
 
-.castleContainer{
-    position: absolute;
-    top: 20%;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-}
+    .castleContainer{
+        position: absolute;
+        top: 20%;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+    }
 
-.castleTriangle{
-    position: absolute;
-    top: 11%;
-    left: 35.5%;
-    z-index: 2;
-    width: 30vw;
-    height: 10vh;
-}
+    .castleTriangle{
+        position: absolute;
+        top: 11%;
+        left: 35.5%;
+        z-index: 2;
+        width: 30vw;
+        height: 10vh;
+    }
 
-.castle{
-    border-radius: 3px 3px 0 0;
-    height: 60vh;
-    width: 30vw;
-}
+    .castle{
+        border-radius: 3px 3px 0 0;
+        height: 60vh;
+        width: 30vw;
+    }
 
 
 /*Styling for castle Windows*/
 /*---------------------------------------------------------------------------------------*/
 
-.windowContainer, .windowContainerBottom{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 60vw;
-    height: 18vh;
-    z-index: 3;
-}
+    .windowContainer, .windowContainerBottom{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 60vw;
+        height: 18vh;
+        z-index: 3;
+    }
 
-.windowContainer{
-    top: 25vh;
-}
+    .windowContainer{
+        top: 25vh;
+    }
 
-.windowContainerBottom{
-    top: 65vh;
-}
+    .windowContainerBottom{
+        top: 65vh;
+    }
 
-.window{
-    z-index: 3;
-    height: 50%;
-    width: 30%;
-    padding: .4%;
-    flex: 1 0 10%;
-    /*flex-basis: 10%;*/
-}
+    .window{
+        z-index: 3;
+        height: 50%;
+        width: 30%;
+        padding: .4%;
+        flex: 1 0 10%;
+        /*flex-basis: 10%;*/
+    }
+
 
 /*Styling for castle door*/
 /*---------------------------------------------------------------------------------------*/
 
-.doorContainer{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    z-index: 3;
-    bottom: 20%;
+    .doorContainer{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        z-index: 3;
+        bottom: 20%;
+    }
+
+    .door{
+        height: 25vh;
+        width: 5vw;
+    }
+
+    #door2{
+        transform: scaleX(-1);
 }
 
-.door{
-    height: 25vh;
-    width: 5vw;
-}
-
-#door2{
-    transform: scaleX(-1);
-}
 
 /*Merry Christmas speechbubble styling*/
 /*---------------------------------------------------------------------------------------*/
 
-.merryXmas{
-    position: absolute;
-    height: 20vh;
-    top: 42%;
-    left: 50%;
-    opacity: 0;
-    transition-property: all;
-    transition-timing-function: ease-in;
-    transition-duration: .6s;
-    z-index: 2;
-}
+    .merryXmas{
+        position: absolute;
+        height: 20vh;
+        top: 42%;
+        left: 50%;
+        opacity: 0;
+        transition-property: all;
+        transition-timing-function: ease-in;
+        transition-duration: .6s;
+        z-index: 2;
+    }
+
 
 /*Merry Christmas speechbubble animation*/
 /*---------------------------------------------------------------------------------------*/
 
-.doorContainer:hover + .merryXmas{
-    opacity: 1;
-    z-index: 2;
-}
+    .doorContainer:hover + .merryXmas{
+        opacity: 1;
+        z-index: 2;
+    }
 
 
 /*Styling for trees*/
 /*---------------------------------------------------------------------------------------*/
 
-.tree{
-    position: absolute;
-    z-index: 3;
-}
+    .tree{
+        position: absolute;
+        z-index: 3;
+    }
 
-#tree1{
-    height: 40vh;
-    left: 6%;
-    bottom: -1%;
-}
+    #tree1{
+        height: 40vh;
+        left: 6%;
+        bottom: -1%;
+    }
 
-#tree2{
-    height: 45vh;
-    left: -7%;
-    bottom: 5%;
-}
+    #tree2{
+        height: 45vh;
+        left: -7%;
+        bottom: 5%;
+    }
 
-#tree3{
-    height: 45vh;
-    right: 2%;
-    bottom: 15%;
-}
+    #tree3{
+        height: 45vh;
+        right: 2%;
+        bottom: 15%;
+    }
 
-#tree4{
-    height: 35vh;
-    right: -1%;
-    bottom: 2%;
-}
+    #tree4{
+        height: 35vh;
+        right: -1%;
+        bottom: 2%;
+    }
 
-#tree5{
-    height: 40vh;
-    left: -1%;
-    bottom: 20%;
-}
-
-
+    #tree5{
+        height: 40vh;
+        left: -1%;
+        bottom: 20%;
+    }
 
 
 /*Styling for clouds*/
 /*---------------------------------------------------------------------------------------*/
 
-.cloud{
-    position: absolute;
-    transform: rotate(90deg);
-    animation-iteration-count: infinite;
-    animation-duration: 4s;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-}
+    .cloud{
+        position: absolute;
+        transform: rotate(90deg);
+        animation-iteration-count: infinite;
+        animation-duration: 4s;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+    }
 
 
-#cloud1{
-    width: 7%;
-    top: -2%;
-    left: 10%;
-    animation-name: cloud1;
-    
-}
+    #cloud1{
+        width: 7%;
+        top: -2%;
+        left: 10%;
+        animation-name: cloud1;
+    }
 
-#cloud2{
-    width: 7%;
-    height: 35%;
-    top: -6%;
-    left: 30%;
-    animation-name: cloud2;
-    animation-duration: 5s;
+    #cloud2{
+        width: 7%;
+        height: 35%;
+        top: -6%;
+        left: 30%;
+        animation-name: cloud2;
+        animation-duration: 5s;
+    }
 
+    #cloud3{
+        width: 13%;
+        height: 30%;
+        top: 10%;
+        right: 5%;
+        animation-name: cloud3;
+    }
 
-}
+    #cloud4{
+        width: 10%;
+        height: 50%;
+        top: -15%;
+        right: 30%;
+        animation-name: cloud4;
+    }
 
-#cloud3{
-    width: 13%;
-    height: 30%;
-    top: 10%;
-    right: 5%;
-    animation-name: cloud3;
-
-}
-
-#cloud4{
-    width: 10%;
-    height: 50%;
-    top: -15%;
-    right: 30%;
-    animation-name: cloud4;
-
-}
 
 /*Animation for clouds*/
 /*---------------------------------------------------------------------------------------*/
 
-@keyframes cloud1{
+    @keyframes cloud1{
 
-    100%{
-        left: 13%;
+        100%{
+            left: 13%;
+        }
     }
-}
 
-@keyframes cloud2{
+    @keyframes cloud2{
 
-    100%{
-        left: 34%;
+        100%{
+            left: 34%;
+        }
     }
-}
 
-@keyframes cloud3{
+    @keyframes cloud3{
 
-    100%{
-        right: 7%;
+        100%{
+            right: 7%;
+        }
     }
-}
 
-@keyframes cloud4{
+    @keyframes cloud4{
 
-    100%{
-        right: 35%;
+        100%{
+            right: 35%;
+        }
     }
-}
 
 
-.present{
-    position: absolute;
-    height: 8vh;
-    z-index: 0;
-    animation-play-state: paused;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); 
-}
+/*Styling for presents*/
+/*---------------------------------------------------------------------------------------*/
 
-#present1, #present2, #present3{
-    opacity: 0;
-}
+    .present{
+        position: absolute;
+        height: 8vh;
+        z-index: 0;
+        animation-play-state: paused;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); 
+    }
 
-#present1{
-    animation-name: present1Animation;
-}
-#present2{
-    animation-name: present2Animation;
-}
-#present3{
-    animation-name: present3Animation;
-}
+    #present1, #present2, #present3{
+        opacity: 0;
+    }
 
-.presentShowBtn{
-    position: absolute;
-    height: 10vh;
-    width: 10vw;
-    background-color: rgb(216, 216, 216);
-    z-index: 99;
-    cursor: pointer;
-    border-radius: 100%;
-    text-align: center;
-}
+    #present1{
+        animation-name: present1Animation;
+    }
+    #present2{
+        animation-name: present2Animation;
+    }
+    #present3{
+        animation-name: present3Animation;
+    }
+
+    .presentShowBtn{
+        position: absolute;
+        height: 10vh;
+        width: 10vw;
+        background-color: rgb(216, 216, 216);
+        z-index: 99;
+        cursor: pointer;
+        border-radius: 100%;
+    }
 
 
 /*Animation for present hover: Presents showing*/
 /*---------------------------------------------------------------------------------------*/
 
-.presentShowBtn:hover > #present1{ 
-    animation-play-state: running;
-}
-.presentShowBtn:hover > #present2{ 
-    animation-play-state: running;
-}
-.presentShowBtn:hover > #present3{ 
-    animation-play-state: running;
-}
+    .presentShowBtn:hover > #present1{ 
+        animation-play-state: running;
+    }
+    .presentShowBtn:hover > #present2{ 
+        animation-play-state: running;
+    }
+    .presentShowBtn:hover > #present3{ 
+        animation-play-state: running;
+    }
 
-@keyframes present1Animation{
-    0%{
-        left: -350%;
-        top: 800%;
+    @keyframes present1Animation{
+        0%{
+            left: -350%;
+            top: 800%;
+        }
+        20%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 1;
+            left: -390%;
+            top: 850%;
+        }
     }
-    20%{
-        opacity: 1;
+    @keyframes present2Animation{
+        0%{
+            left: 390%;
+            top: 710%;
+        }
+        20%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 1;
+            left: 340%;
+            top: 770%;
+        }
     }
-    100%{
-        opacity: 1;
-        left: -390%;
-        top: 850%;
+    @keyframes present3Animation{
+        0%{
+            left: 410%;
+            top: 740%;
+        }
+        20%{
+            opacity: .5;
+        }
+        40%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 1;
+            left: 380%;
+            top: 890%;
+        }
     }
-}
-@keyframes present2Animation{
-    0%{
-        left: 390%;
-        top: 710%;
-    }
-    20%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 1;
-        left: 340%;
-        top: 770%;
-    }
-}
-@keyframes present3Animation{
-    0%{
-        left: 410%;
-        top: 740%;
-    }
-    20%{
-        opacity: .5;
-    }
-    40%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 1;
-        left: 380%;
-        top: 890%;
-    }
-}
+
 
 /*Bush styling*/
 /*---------------------------------------------------------------------------------------*/
 
-.bushContainer{
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    top: 75vh;
-    height: 100vh;
-    width: 20vw;    
-    z-index: 2;
-}
+    .bushContainer{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        top: 75vh;
+        height: 100vh;
+        width: 20vw;    
+        z-index: 2;
+    }
 
-.bush{
-    height: 10vh;
-    top: 0;
-    animation-name: jump;
-    animation-timing-function: ease-in;
-    animation-duration: 1s;
-    animation-delay: 3s;
-}
+    .bush{
+        height: 10vh;
+        top: 0;
+        animation-name: shake;
+        animation-timing-function: ease-in;
+        animation-duration: 10s;
+        animation-iteration-count:infinite;
+        animation-delay: 3s;
+        
+    }
 
 
-/*Bush jump animation*/
+/*Bush shake animation*/
 /*---------------------------------------------------------------------------------------*/
 
-@keyframes jump{
-    0%{
-        transform: translate(0);
+    @keyframes shake{
+        0%{
+            transform: translate(0);
+        }
+        2%,
+        4%,
+        6%,
+        8%{
+            transform: translate(.2vh);
+        }
+        1%,
+        3%,
+        5%{
+            transform: translate(-.2vh);
+        }
+        7%,
+        10%,
+        100%{
+            transform: translate(0);
+        }
     }
-    20%,
-    40%,
-    60%,
-    80%{
-        transform: translate(.2vh);
-    }
-    10%,
-    30%,
-    50%{
-        transform: translate(-.2vh);
-    }
-    70%,
-    100%{
-        transform: translate(0);
-    }
-}
+
 
 /*Sign styling*/
 /*---------------------------------------------------------------------------------------*/
 
-.signContainer{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    z-index: 1;
-    bottom: 27%;
-    left: 11.4%;
+    .signContainer{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        z-index: 1;
+        bottom: 27%;
+        left: 11.4%;
 
-}
+    }
 
-.sign{
-    width: 12vw;
-    height: 25vh;
-}
+    .sign{
+        width: 12vw;
+        height: 25vh;
+    }
+
 
 /*Sign link styling*/
-a{
-    position: absolute;
-    left: 14.4%;
-    bottom: 41%;
-    z-index: 3;
-    font-size: 2vh;
-    color: black;
-    text-decoration: none;
-    font-weight: 800;
-}
+/*---------------------------------------------------------------------------------------*/
 
-
-
+    a{
+        position: absolute;
+        left: 14.4%;
+        bottom: 41%;
+        z-index: 3;
+        font-size: 2vh;
+        color: black;
+        text-decoration: none;
+        font-weight: 800;
+    }
