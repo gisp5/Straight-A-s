@@ -220,9 +220,8 @@
     animation-duration: 4s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
-    animation-play-state: running;
+    
 }
-
 
 /* Animasjon av sleden */
 /*---------------------------------------------------------------------------------------*/
@@ -279,20 +278,22 @@ a{
     z-index: 3;
     color: black;
     text-decoration: none;
-    font-size: 80%;
-   
+    height: 2%;
+    width: 2%;
+    
 }
 
 #spaceLink{
-    top: 54%;
+    top: 53%;
     left: 9.5%;
     z-index: 3;
     transform: rotate(-22deg);
+    
 }
 
 #legoCityLink{
-    top: 57.5%;
-    left: 8%;
+    top: 57%;
+    left: 8.5%;
     z-index: 3;
       
 }

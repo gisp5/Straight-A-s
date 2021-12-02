@@ -49,504 +49,156 @@ animasjoner så hver bolk representerer 1 linje med snø som faller gitt litt fo
 osv for å få en naturlig effekt */
 /*--------------------------------------------------------------------------------------------------------------*/
 
-#flake1{
+#flake1, #flake21, #flake41, #flake61, #flake81 {
     animation-name: snowflake1;
-    animation-delay:0s;
 }
 
-#flake2{
+#flake2, #flake22, #flake42, #flake62, #flake82 {
     animation-name: snowflake2;
-    animation-delay:1s;
 }
 
-#flake3{
+#flake3, #flake23, #flake43, #flake63, #flake83 {
     animation-name: snowflake3;
-    animation-delay:0.5s;
 }
 
-#flake4{
+#flake4, #flake24, #flake44, #flake64, #flake84 {
     animation-name: snowflake4;
-    animation-delay: 1s;
 }
 
-#flake5{
+#flake5, #flake25, #flake45, #flake65, #flake85 {
     animation-name: snowflake5;
-    animation-delay: 0s;
 }
 
-#flake6{
+#flake6, #flake26, #flake46, #flake66, #flake86 {
     animation-name: snowflake6;
-    animation-delay: 2s;
 }
 
-#flake7{
+#flake7, #flake27, #flake47, #flake67, #flake87 {
     animation-name: snowflake7;
-    animation-delay: 0s;
 }
 
-#flake8{
+#flake8, #flake28, #flake48, #flake68, #flake88 {
     animation-name: snowflake8;
+}
+
+#flake9, #flake29, #flake49, #flake69, #flake89 {
+    animation-name: snowflake9;
+}
+
+#flake10, #flake30, #flake50, #flake70, #flake90 {
+    animation-name: snowflake10;
+}
+
+#flake11, #flake31, #flake51, #flake71, #flake91 {
+    animation-name: snowflake11;
+}
+
+#flake12, #flake32, #flake52, #flake72, #flake92 {
+    animation-name: snowflake12;
+}
+
+#flake13, #flake33, #flake53, #flake73, #flake93 {
+    animation-name: snowflake13;
+}
+
+#flake14, #flake34, #flake54, #flake74, #flake94 {
+    animation-name: snowflake14;
+}
+
+#flake15, #flake35, #flake55, #flake75, #flake95 {
+    animation-name: snowflake15;
+}
+
+#flake16, #flake36, #flake56, #flake76, #flake96 {
+    animation-name: snowflake16;
+}
+
+#flake17, #flake37, #flake57, #flake77, #flake97 {
+    animation-name: snowflake17;
+}
+
+#flake18, #flake38, #flake58, #flake78, #flake98 {
+    animation-name: snowflake18;
+}
+
+#flake19, #flake39, #flake59, #flake79, #flake99 {
+    animation-name: snowflake19;
+}
+
+#flake20, #flake40, #flake60, #flake80, #flake100 {
+    animation-name: snowflake20;
+}
+
+#flake2, #flake4, #flake8, #flake10, #flake14, #flake18{
     animation-delay: 1s;
 }
 
-#flake9{
-    animation-name: snowflake9;
+#flake3, #flake9, #flake17 {
     animation-delay: 0.5s;
 }
 
-#flake10{
-    animation-name: snowflake10;
-    animation-delay: 1s;
-}
-
-#flake11{
-    animation-name: snowflake11;
-    animation-delay: 0s;
-}
-
-#flake12{
-    animation-name: snowflake12;
+#flake6, #flake12, #flake16, #flake20 {
     animation-delay: 2s;
 }
 
-#flake13{
-    animation-name: snowflake13;
-    animation-delay: 0s;
-}
-
-#flake14{
-    animation-name: snowflake14;
-    animation-delay: 1s;
-}
-
-#flake15{
-    animation-name: snowflake15;
-    animation-delay: 0s;
-}
-
-#flake16{
-    animation-name: snowflake16;
-    animation-delay: 2s;
-}
-
-#flake17{
-    animation-name: snowflake17;
-    animation-delay: 0.5s;
-}
-
-#flake18{
-    animation-name: snowflake18;
-    animation-delay: 1s;
-}
-
-#flake19{
-    animation-name: snowflake19;
-    animation-delay: 0s;
-}
-
-#flake20{
-    animation-name: snowflake20;
-    animation-delay: 2s;
-}
-
-#flake21{
-    animation-name: snowflake1;
+#flake21, #flake22, #flake28, #flake37 {
     animation-delay: 3s;
 }
 
-#flake22{
-    animation-name: snowflake2;
-    animation-delay: 3s;
-}
-
-#flake23{
-    animation-name: snowflake3;
-    animation-delay: 4s;
-}
-
-#flake24{
-    animation-name: snowflake4;
+#flake24, #flake27, #flake30, #flake33, #flake35, #flake38, #flake40 {
     animation-delay: 3.5s;
 }
 
-#flake25{
-    animation-name: snowflake5;
+#flake23, #flake25, #flake29, #flake31, #flake34, #flake39 {
     animation-delay: 4s;
 }
 
-#flake26{
-    animation-name: snowflake6;
+#flake26, #flake32, #flake36 {
     animation-delay: 4.5s;
 }
 
-#flake27{
-    animation-name: snowflake7;
-    animation-delay: 3.5s;
-}
-
-#flake28{
-    animation-name: snowflake8;
-    animation-delay: 3s;
-}
-
-#flake29{
-    animation-name: snowflake9;
-    animation-delay: 4s;
-}
-
-#flake30{
-    animation-name: snowflake10;
-    animation-delay: 3.5s;
-}
-
-#flake31{
-    animation-name: snowflake11;
-    animation-delay: 4s;
-}
-
-#flake32{
-    animation-name: snowflake12;
-    animation-delay: 4.5s;
-}
-
-#flake33{
-    animation-name: snowflake13;
-    animation-delay: 3.5s;
-}
-
-#flake34{
-    animation-name: snowflake14;
-    animation-delay: 4s;
-}
-
-#flake35{
-    animation-name: snowflake15;
-    animation-delay: 3.5s;
-}
-
-#flake36{
-    animation-name: snowflake16;
-    animation-delay: 4.5s;
-}
-
-#flake37{
-    animation-name: snowflake17;
-    animation-delay: 3s;
-}
-
-#flake38{
-    animation-name: snowflake18;
-    animation-delay: 3.5s;
-}
-
-#flake39{
-    animation-name: snowflake19;
-    animation-delay: 4s;
-}
-
-#flake40{
-    animation-name: snowflake20;
-    animation-delay: 3.5s;
-}
-
-#flake41{
-    animation-name: snowflake1;
+#flake41, #flake45, #flake49 {
     animation-delay: 5.5s;
 }
 
-#flake42{
-    animation-name: snowflake2;
+#flake42, #flake44, #flake46, #flake48, #flake56, #flake60 {
     animation-delay: 6s;
 }
 
-#flake43{
-    animation-name: snowflake3;
+#flake43, #flake47, #flake50, #flake52, #flake55, #flake57, #flake59 {
     animation-delay: 6.5s;
 }
 
-#flake44{
-    animation-name: snowflake4;
-    animation-delay: 6s;
-}
-
-#flake45{
-    animation-name: snowflake5;
-    animation-delay: 5.5s;
-}
-
-#flake46{
-    animation-name: snowflake6;
-    animation-delay: 6s;
-}
-
-#flake47{
-    animation-name: snowflake7;
-    animation-delay: 6.5s;
-}
-
-#flake48{
-    animation-name: snowflake8;
-    animation-delay: 6s;
-}
-
-#flake49{
-    animation-name: snowflake9;
-    animation-delay: 5.5s;
-}
-
-#flake50{
-    animation-name: snowflake10;
-    animation-delay: 6.5s;
-}
-
-#flake51{
-    animation-name: snowflake11;
+#flake51, #flake53, #flake58 {
     animation-delay: 7s;
 }
 
-#flake52{
-    animation-name: snowflake12;
-    animation-delay: 6.5s;
-}
-
-#flake53{
-    animation-name: snowflake13;
-    animation-delay: 7s;
-}
-
-#flake54{
-    animation-name: snowflake14;
+#flake54 {
     animation-delay: 7.5s;
 }
 
-#flake55{
-    animation-name: snowflake15;
-    animation-delay: 6.5s;
-}
-
-#flake56{
-    animation-name: snowflake16;
-    animation-delay: 6s;
-}
-
-#flake57{
-    animation-name: snowflake17;
-    animation-delay: 6.5s;
-}
-
-#flake58{
-    animation-name: snowflake18;
-    animation-delay: 7s;
-}
-
-#flake59{
-    animation-name: snowflake19;
-    animation-delay: 6.5s;
-}
-
-#flake60{
-    animation-name: snowflake20;
-    animation-delay: 6s;
-}
-
-#flake61{
-    animation-name: snowflake1;
+#flake61, #flake64, #flake68, #flake70, #flake73, #flake74, #flake76, #flake78 {
     animation-delay: 8.5s;
 }
 
-#flake62{
-    animation-name: snowflake2;
+#flake62, #flake65, #flake67, #flake71, #flake75, #flake79 {
     animation-delay: 9s;
 }
 
-#flake63{
-    animation-name: snowflake3;
+#flake63, #flake66, #flake69, #flake72, #flake77 {
     animation-delay: 8s;
 }
 
-#flake64{
-    animation-name: snowflake4;
-    animation-delay: 8.5s;
-}
-
-#flake65{
-    animation-name: snowflake5;
-    animation-delay: 9s;
-}
-
-#flake66{
-    animation-name: snowflake6;
-    animation-delay: 8s;
-}
-
-#flake67{
-    animation-name: snowflake7;
-    animation-delay: 9s;
-}
-
-#flake68{
-    animation-name: snowflake8;
-    animation-delay: 8.5s;
-}
-
-#flake69{
-    animation-name: snowflake9;
-    animation-delay: 8s;
-}
-
-#flake70{
-    animation-name: snowflake10;
-    animation-delay: 8.5s;
-}
-
-#flake71{
-    animation-name: snowflake11;
-    animation-delay: 9s;
-}
-
-#flake72{
-    animation-name: snowflake12;
-    animation-delay: 8s;
-}
-
-#flake73{
-    animation-name: snowflake13;
-    animation-delay: 8.5s;
-}
-
-#flake74{
-    animation-name: snowflake14;
-    animation-delay: 8.5s;
-}
-
-#flake75{
-    animation-name: snowflake15;
-    animation-delay: 9s;
-}
-
-#flake76{
-    animation-name: snowflake16;
-    animation-delay: 8.5s;
-}
-
-#flake77{
-    animation-name: snowflake17;
-    animation-delay: 8s;
-}
-
-#flake78{
-    animation-name: snowflake18;
-    animation-delay: 8.5s;
-}
-
-#flake79{
-    animation-name: snowflake19;
-    animation-delay: 9s;
-}
-
-#flake80{
-    animation-name: snowflake20;
+#flake80, #flake84, #flake89, #flake91, #flake94, #flake97, #flake100 {
     animation-delay: 10s;
 }
 
-#flake81{
-    animation-name: snowflake1;
+#flake81, #flake83, #flake85, #flake87, #flake90, #flake93, #flake96 {
     animation-delay: 11s;
 }
 
-#flake82{
-    animation-name: snowflake2;
+#flake82, #flake86, #flake88, #flake92, #flake95, #flake98, #flake99 {
     animation-delay: 10.5s;
-}
-
-#flake83{
-    animation-name: snowflake3;
-    animation-delay: 11s;
-}
-
-#flake84{
-    animation-name: snowflake4;
-    animation-delay: 10s;
-}
-
-#flake85{
-    animation-name: snowflake5;
-    animation-delay: 11s;
-}
-
-#flake86{
-    animation-name: snowflake6;
-    animation-delay: 10.5s;
-}
-
-#flake87{
-    animation-name: snowflake7;
-    animation-delay: 11s;
-}
-
-#flake88{
-    animation-name: snowflake8;
-    animation-delay: 10.5s;
-}
-
-#flake89{
-    animation-name: snowflake9;
-    animation-delay: 10s;
-}
-
-#flake90{
-    animation-name: snowflake10;
-    animation-delay: 11s;
-}
-
-#flake91{
-    animation-name: snowflake11;
-    animation-delay: 10s;
-}
-
-#flake92{
-    animation-name: snowflake12;
-    animation-delay: 10.5s;
-}
-
-#flake93{
-    animation-name: snowflake13;
-    animation-delay: 11s;
-}
-
-#flake94{
-    animation-name: snowflake14;
-    animation-delay: 10s;
-}
-
-#flake95{
-    animation-name: snowflake15;
-    animation-delay: 10.5s;
-}
-
-#flake96{
-    animation-name: snowflake16;
-    animation-delay: 11s;
-}
-
-#flake97{
-    animation-name: snowflake17;
-    animation-delay: 10s;
-}
-
-#flake98{
-    animation-name: snowflake18;
-    animation-delay: 10.5s;
-}
-
-#flake99{
-    animation-name: snowflake19;
-    animation-delay: 10.5s;
-}
-
-#flake100{
-    animation-name: snowflake20;
-    animation-delay: 10s;
 }
 
 /* Animasjoner for hver enkelt linje med snøfnugg, med litt forskjellig rotasjon lengde avstand og z-index */
