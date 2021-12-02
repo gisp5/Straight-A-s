@@ -31,7 +31,7 @@ body{
         flex-direction: row;
     }
 
-    .snow{
+    .snowGround{
         height:40vh;
     }
 
@@ -311,7 +311,7 @@ body{
         position: absolute;
         height: 10vh;
         width: 10vw;
-        background-color: rgb(216, 216, 216);
+        background: linear-gradient(rgb(233, 233, 233), rgb(209, 209, 209));
         z-index: 99;
         cursor: pointer;
         border-radius: 100%;
