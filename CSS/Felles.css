@@ -49,6 +49,19 @@ animasjoner så hver bolk representerer 1 linje med snø som faller gitt litt fo
 osv for å få en naturlig effekt */
 /*--------------------------------------------------------------------------------------------------------------*/
 
+.snow{
+    position:absolute;
+    height: 5%;
+    left: 5%;
+    top: -20%;
+    z-index: 5;
+    animation-duration: 11.5s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    
+}
+
 #flake1, #flake21, #flake41, #flake61, #flake81 {
     animation-name: snowflake1;
 }

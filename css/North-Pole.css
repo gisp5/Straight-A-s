@@ -440,15 +440,4 @@ a{
 /* Fellesboks for snøfnugg */
 /*---------------------------------------------------------------------------------------*/
 
-.snow{
-    position:absolute;
-    height: 5%;
-    left: 5%;
-    top: -20%;
-    z-index: 5;
-    animation-duration: 11.5s;
-    animation-timing-function: linear;
-    animation-delay: 1s;
-    animation-iteration-count: infinite;
-    
-}
+
