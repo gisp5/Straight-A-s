@@ -30,6 +30,7 @@ body{
         #legoMoon {
             opacity: 0;
             animation: legoMoonSpin 10s 10s forwards linear;
+
         }
 
 
@@ -46,18 +47,13 @@ body{
 
         /*Moon Animations*/
             @keyframes moonBob {
-                0% {
-                    top: 0;
-                }
-
-                50% {
-                    top: 1%;
-                }
-
-                100% {
-                    top: 0;
-                }
+                0% {top: 0; 
+                    opacity: 1;}
+                50%{ top: 1%;}
+                100% {top: 0;
+                    opacity: 1;}
             }
+            
 
             @keyframes moonSpin {
                 0% {
