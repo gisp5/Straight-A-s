@@ -342,7 +342,6 @@ body {
 #mushroomCloud {
     position: absolute;
     z-index: 4;
-    top: 35%;
     left: 39%; 
     width: 7vw;
     opacity: 0;
@@ -352,7 +351,7 @@ body {
 
 @keyframes mushroomCloudAnimation {
     0% {
-       
+        top: 35%;
     }
     100% {
         top: 30%;
