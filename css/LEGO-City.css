@@ -82,9 +82,9 @@ body{
 	}
 
 @keyframes woman {
-	0% {top: 12.5;  transform: rotate(-5deg);}
+	0% {top: 12.5%;  transform: rotate(-5deg);}
     50%{ top: 13%; transform: rotate(5deg);}
-    100% {top: 12.5;  transform: rotate(-5deg);}
+    100% {top: 12.5%;  transform: rotate(-5deg);}
     
 }
 
@@ -257,11 +257,11 @@ body{
 
 @keyframes moveSleigh {
 	0% {
-		top: -30%;
-		right: 540%;
+		top: -50%;
+		right: 45%;
 		transform: rotateY(180deg) rotate(-20deg);
-
 	}
+	
 	100% {
 		top: 3.5%;
 		left: 30%;
