@@ -44,10 +44,8 @@ body{
 }
 /*----------------------------------------------------------------*/
 
-/* snøfnugg animasjoner, med forskjellige intervallerfra 1 - 20, 21-40, 41-60, 61-80 og 81-100 linket videre til 
-animasjoner så hver bolk representerer 1 linje med snø som faller gitt litt forskjellige delay og lengder 
-osv for å få en naturlig effekt */
-/*--------------------------------------------------------------------------------------------------------------*/
+/* Fellesboks for snøfnugg */
+/*---------------------------------------------------------------------------------------*/
 
 .snow{
     position:absolute;
@@ -61,6 +59,11 @@ osv for å få en naturlig effekt */
     animation-iteration-count: infinite;
     
 }
+
+/* snøfnugg animasjoner, med forskjellige intervallerfra 1 - 20, 21-40, 41-60, 61-80 og 81-100 linket videre til 
+animasjoner så hver bolk representerer 1 linje med snø som faller gitt litt forskjellige delay og lengder 
+osv for å få en naturlig effekt */
+/*--------------------------------------------------------------------------------------------------------------*/
 
 #flake1, #flake21, #flake41, #flake61, #flake81 {
     animation-name: snowflake1;
