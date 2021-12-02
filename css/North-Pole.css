@@ -3,11 +3,12 @@
     z-index: 1;
     height: 100vh;
     width: 100vw;
-    position: absolute;
+    position: relative;
     overflow:hidden;
 }
+
 #cloudBackground{
-    z-index: 1;
+    z-index: 2;
     height: 100vh;
     width: 100vw;
     position: absolute;
@@ -29,6 +30,7 @@
 }
 
 /* Bildet av gavemaskinen */
+/*---------------------------------------------------------------------------------------*/
 
 #assemblyLine{
     position: absolute;
@@ -38,6 +40,7 @@
 }
 
 /* Grå div som ligger over bildet av gavemaskinen (Underlaget til beltet) */
+/*---------------------------------------------------------------------------------------*/
 
 #conveyorBelt{
     background-color: rgb(114, 114, 114);
@@ -51,6 +54,7 @@
 }
 
 /* Fellesegenskaper for linjene på beltet */
+/*---------------------------------------------------------------------------------------*/
 
 .belt{
     background-color: rgb(56, 56, 56);
@@ -64,6 +68,7 @@
 }
 
 /*  Linjer lagt over conveyorbelt diven for å få det til å se ut som at beltet beveger seg*/
+/*---------------------------------------------------------------------------------------*/
 
 #belt1{
     right: 0%;
@@ -92,6 +97,7 @@
 }
 
 /* animasjoner til strekene på beltet */
+/*---------------------------------------------------------------------------------------*/
 
 @keyframes belt1Movement{
     0%{right: 1%}
@@ -120,6 +126,7 @@
 }
 
 /* Streker på hjulene på transportbeltet */ 
+/*---------------------------------------------------------------------------------------*/
 
 .wheels{
     background-color: rgb(189, 189, 189);
@@ -149,6 +156,7 @@
 }
 
 /* Animasjon til hjulene */
+/*---------------------------------------------------------------------------------------*/
 
 @keyframes wheelSpin{
     0%{transform: rotate(0deg);}
@@ -156,6 +164,7 @@
 }
 
 /* Gaver på båndet  */
+/*---------------------------------------------------------------------------------------*/
 
 .present{
     position: absolute;
@@ -184,6 +193,7 @@
 }
 
 /* Animasjoner av gavene på båndet */
+/*---------------------------------------------------------------------------------------*/
 
 @keyframes present1Move{
     0%{top: 48%;
@@ -196,6 +206,7 @@
 }
 
 /* Sleden */
+/*---------------------------------------------------------------------------------------*/
 
 #sleigh{
     position: absolute;
@@ -205,13 +216,17 @@
     right: -30%;
     z-index: 5;
     animation-name: sleighTravel1,sleighTravel2;
-    animation-delay: 0s,6s;
+    animation-delay: 0s,10s;
     animation-duration: 4s;
-    animation-timing-function:linear;
+    animation-timing-function: linear;
     animation-fill-mode: forwards;
+    animation-play-state: running;
 }
 
+
 /* Animasjon av sleden */
+/*---------------------------------------------------------------------------------------*/
+
 @keyframes sleighTravel1{
     0%{bottom: 15%;
         right: -30%;
@@ -233,11 +248,13 @@
 }
 
 /* Skilt for linker til de andre siden (verdensrommet og legocity) */
+/*---------------------------------------------------------------------------------------*/
 
 #signpostToTheWorld {
     position: absolute;
     z-index: 3;
     width: 10vw;
+    height: 20vh;
     left: 5%;
     top: 50%;
 }
@@ -255,38 +272,45 @@
 }
 
 /* Linker */
+/*---------------------------------------------------------------------------------------*/
 
-.links{
+a{
     position: absolute;
     z-index: 3;
     color: black;
     text-decoration: none;
+    font-size: 80%;
+   
 }
 
 #spaceLink{
-    top: 53.5%;
+    top: 54%;
     left: 9.5%;
     z-index: 3;
     transform: rotate(-22deg);
 }
 
 #legoCityLink{
-    top: 57%;
-    left: 7.5%;
-    z-index: 3;    
+    top: 57.5%;
+    left: 8%;
+    z-index: 3;
+      
 }
 
-/* Posisjonering av hus */ 
+/* Posisjonering av hus */
+/*---------------------------------------------------------------------------------------*/ 
 
 #house2{
     position: absolute;
     bottom: 20%;
-    right: 40%;
+    right: 30%;
     height: 40%;
+    width:30%; 
     z-index: 3;
 }
 
 /* Sekken som gavene detter ned i */
+/*---------------------------------------------------------------------------------------*/
 
 #giftbag{
     position: absolute;
@@ -294,9 +318,15 @@
     right: 15.5%;
     z-index: 2;
     height:30%;
+    width: 15%;
 }
 
+#giftbag:hover + #sleigh{
+    animation-play-state: running;
+    /*transform: scale(2);*/
+}
 /* Nissens hjelpere som står bak båndet */
+/*---------------------------------------------------------------------------------------*/
 
 #helper1{
     position: absolute;
@@ -322,17 +352,20 @@
     height:7%;
 }
 
-/* Posisjonering av hytte */ 
+/* Posisjonering av hytte */
+/*---------------------------------------------------------------------------------------*/ 
 
 #cottage{
     position: absolute;
     bottom: 20%;
-    right: 65.5%;
+    right: 60.5%;
     z-index: 3;
     height:30%;
+    width: 20%;
 }
 
 /* Skyer*/
+/*---------------------------------------------------------------------------------------*/
 
 .cloud{
     position: absolute;
@@ -374,6 +407,7 @@
 }
 
 /* Animasjon av skyer */
+/*---------------------------------------------------------------------------------------*/
 
 @keyframes cloudMovement1{
     0%{top:7%;
@@ -403,6 +437,7 @@
         left: 130%;}
 }
 /* Fellesboks for snøfnugg */
+/*---------------------------------------------------------------------------------------*/
 
 .snow{
     position:absolute;
@@ -415,723 +450,4 @@
     animation-delay: 1s;
     animation-iteration-count: infinite;
     
-}
-
-/* snøfnugg animasjoner, med forskjellige intervallerfra 1 - 20, 21-40, 41-60 og 61-80 linket videre til animasjoner så hver bolk representerer 1 linje med snø som faller
-gitt litt forskjellige delay og lengder osv for å få en naturlig effekt */
-
-#flake1{
-    animation-name: snowflake1;
-    animation-delay:0s;
-}
-
-#flake2{
-    animation-name: snowflake2;
-    animation-delay:1s;
-}
-
-#flake3{
-    animation-name: snowflake3;
-    animation-delay:0.5s;
-}
-
-#flake4{
-    animation-name: snowflake4;
-    animation-delay: 1s;
-}
-
-#flake5{
-    animation-name: snowflake5;
-    animation-delay: 0s;
-}
-
-#flake6{
-    animation-name: snowflake6;
-    animation-delay: 2s;
-}
-
-#flake7{
-    animation-name: snowflake7;
-    animation-delay: 0s;
-}
-
-#flake8{
-    animation-name: snowflake8;
-    animation-delay: 1s;
-}
-
-#flake9{
-    animation-name: snowflake9;
-    animation-delay: 0.5s;
-}
-
-#flake10{
-    animation-name: snowflake10;
-    animation-delay: 1s;
-}
-
-#flake11{
-    animation-name: snowflake11;
-    animation-delay: 0s;
-}
-
-#flake12{
-    animation-name: snowflake12;
-    animation-delay: 2s;
-}
-
-#flake13{
-    animation-name: snowflake13;
-    animation-delay: 0s;
-}
-
-#flake14{
-    animation-name: snowflake14;
-    animation-delay: 1s;
-}
-
-#flake15{
-    animation-name: snowflake15;
-    animation-delay: 0s;
-}
-
-#flake16{
-    animation-name: snowflake16;
-    animation-delay: 2s;
-}
-
-#flake17{
-    animation-name: snowflake17;
-    animation-delay: 0.5s;
-}
-
-#flake18{
-    animation-name: snowflake18;
-    animation-delay: 1s;
-}
-
-#flake19{
-    animation-name: snowflake19;
-    animation-delay: 0s;
-}
-
-#flake20{
-    animation-name: snowflake20;
-    animation-delay: 2s;
-}
-
-#flake21{
-    animation-name: snowflake1;
-    animation-delay: 3s;
-}
-
-#flake22{
-    animation-name: snowflake2;
-    animation-delay: 3s;
-}
-
-#flake23{
-    animation-name: snowflake3;
-    animation-delay: 4s;
-}
-
-#flake24{
-    animation-name: snowflake4;
-    animation-delay: 3.5s;
-}
-
-#flake25{
-    animation-name: snowflake5;
-    animation-delay: 4s;
-}
-
-#flake26{
-    animation-name: snowflake6;
-    animation-delay: 4.5s;
-}
-
-#flake27{
-    animation-name: snowflake7;
-    animation-delay: 3.5s;
-}
-
-#flake28{
-    animation-name: snowflake8;
-    animation-delay: 3s;
-}
-
-#flake29{
-    animation-name: snowflake9;
-    animation-delay: 4s;
-}
-
-#flake30{
-    animation-name: snowflake10;
-    animation-delay: 3.5s;
-}
-
-#flake31{
-    animation-name: snowflake11;
-    animation-delay: 4s;
-}
-
-#flake32{
-    animation-name: snowflake12;
-    animation-delay: 4.5s;
-}
-
-#flake33{
-    animation-name: snowflake13;
-    animation-delay: 3.5s;
-}
-
-#flake34{
-    animation-name: snowflake14;
-    animation-delay: 4s;
-}
-
-#flake35{
-    animation-name: snowflake15;
-    animation-delay: 3.5s;
-}
-
-#flake36{
-    animation-name: snowflake16;
-    animation-delay: 4.5s;
-}
-
-#flake37{
-    animation-name: snowflake17;
-    animation-delay: 3s;
-}
-
-#flake38{
-    animation-name: snowflake18;
-    animation-delay: 3.5s;
-}
-
-#flake39{
-    animation-name: snowflake19;
-    animation-delay: 4s;
-}
-
-#flake40{
-    animation-name: snowflake20;
-    animation-delay: 3.5s;
-}
-
-#flake41{
-    animation-name: snowflake1;
-    animation-delay: 5.5s;
-}
-
-#flake42{
-    animation-name: snowflake2;
-    animation-delay: 6s;
-}
-
-#flake43{
-    animation-name: snowflake3;
-    animation-delay: 6.5s;
-}
-
-#flake44{
-    animation-name: snowflake4;
-    animation-delay: 6s;
-}
-
-#flake45{
-    animation-name: snowflake5;
-    animation-delay: 5.5s;
-}
-
-#flake46{
-    animation-name: snowflake6;
-    animation-delay: 6s;
-}
-
-#flake47{
-    animation-name: snowflake7;
-    animation-delay: 6.5s;
-}
-
-#flake48{
-    animation-name: snowflake8;
-    animation-delay: 6s;
-}
-
-#flake49{
-    animation-name: snowflake9;
-    animation-delay: 5.5s;
-}
-
-#flake50{
-    animation-name: snowflake10;
-    animation-delay: 6.5s;
-}
-
-#flake51{
-    animation-name: snowflake11;
-    animation-delay: 7s;
-}
-
-#flake52{
-    animation-name: snowflake12;
-    animation-delay: 6.5s;
-}
-
-#flake53{
-    animation-name: snowflake13;
-    animation-delay: 7s;
-}
-
-#flake54{
-    animation-name: snowflake14;
-    animation-delay: 7.5s;
-}
-
-#flake55{
-    animation-name: snowflake15;
-    animation-delay: 6.5s;
-}
-
-#flake56{
-    animation-name: snowflake16;
-    animation-delay: 6s;
-}
-
-#flake57{
-    animation-name: snowflake17;
-    animation-delay: 6.5s;
-}
-
-#flake58{
-    animation-name: snowflake18;
-    animation-delay: 7s;
-}
-
-#flake59{
-    animation-name: snowflake19;
-    animation-delay: 6.5s;
-}
-
-#flake60{
-    animation-name: snowflake20;
-    animation-delay: 6s;
-}
-
-#flake61{
-    animation-name: snowflake1;
-    animation-delay: 8.5s;
-}
-
-#flake62{
-    animation-name: snowflake2;
-    animation-delay: 9s;
-}
-
-#flake63{
-    animation-name: snowflake3;
-    animation-delay: 8s;
-}
-
-#flake64{
-    animation-name: snowflake4;
-    animation-delay: 8.5s;
-}
-
-#flake65{
-    animation-name: snowflake5;
-    animation-delay: 9s;
-}
-
-#flake66{
-    animation-name: snowflake6;
-    animation-delay: 8s;
-}
-
-#flake67{
-    animation-name: snowflake7;
-    animation-delay: 9s;
-}
-
-#flake68{
-    animation-name: snowflake8;
-    animation-delay: 8.5s;
-}
-
-#flake69{
-    animation-name: snowflake9;
-    animation-delay: 8s;
-}
-
-#flake70{
-    animation-name: snowflake10;
-    animation-delay: 8.5s;
-}
-
-#flake71{
-    animation-name: snowflake11;
-    animation-delay: 9s;
-}
-
-#flake72{
-    animation-name: snowflake12;
-    animation-delay: 8s;
-}
-
-#flake73{
-    animation-name: snowflake13;
-    animation-delay: 8.5s;
-}
-
-#flake74{
-    animation-name: snowflake14;
-    animation-delay: 8.5s;
-}
-
-#flake75{
-    animation-name: snowflake15;
-    animation-delay: 9s;
-}
-
-#flake76{
-    animation-name: snowflake16;
-    animation-delay: 8.5s;
-}
-
-#flake77{
-    animation-name: snowflake17;
-    animation-delay: 8s;
-}
-
-#flake78{
-    animation-name: snowflake18;
-    animation-delay: 8.5s;
-}
-
-#flake79{
-    animation-name: snowflake19;
-    animation-delay: 9s;
-}
-
-#flake80{
-    animation-name: snowflake20;
-    animation-delay: 10s;
-}
-
-#flake81{
-    animation-name: snowflake1;
-    animation-delay: 11s;
-}
-
-#flake82{
-    animation-name: snowflake2;
-    animation-delay: 10.5s;
-}
-
-#flake83{
-    animation-name: snowflake3;
-    animation-delay: 11s;
-}
-
-#flake84{
-    animation-name: snowflake4;
-    animation-delay: 10s;
-}
-
-#flake85{
-    animation-name: snowflake5;
-    animation-delay: 11s;
-}
-
-#flake86{
-    animation-name: snowflake6;
-    animation-delay: 10.5s;
-}
-
-#flake87{
-    animation-name: snowflake7;
-    animation-delay: 11s;
-}
-
-#flake88{
-    animation-name: snowflake8;
-    animation-delay: 10.5s;
-}
-
-#flake89{
-    animation-name: snowflake9;
-    animation-delay: 10s;
-}
-
-#flake90{
-    animation-name: snowflake10;
-    animation-delay: 11s;
-}
-
-#flake91{
-    animation-name: snowflake11;
-    animation-delay: 10s;
-}
-
-#flake92{
-    animation-name: snowflake12;
-    animation-delay: 10.5s;
-}
-
-#flake93{
-    animation-name: snowflake13;
-    animation-delay: 11s;
-}
-
-#flake94{
-    animation-name: snowflake14;
-    animation-delay: 10s;
-}
-
-#flake95{
-    animation-name: snowflake15;
-    animation-delay: 10.5s;
-}
-
-#flake96{
-    animation-name: snowflake16;
-    animation-delay: 11s;
-}
-
-#flake97{
-    animation-name: snowflake17;
-    animation-delay: 10s;
-}
-
-#flake98{
-    animation-name: snowflake18;
-    animation-delay: 10.5s;
-}
-
-#flake99{
-    animation-name: snowflake19;
-    animation-delay: 10.5s;
-}
-
-#flake100{
-    animation-name: snowflake20;
-    animation-delay: 10s;
-}
-
-/* Animasjoner for hver enkelt linje med snøfnugg, med litt forskjellig rotasjon lengde avstand og z-index */
-
-@keyframes snowflake1{
-    0%{left: 5%;
-        top: 0%;}
-    90%{opacity: 1;}    
-    100%{left: 5%;
-        top: 80%;
-        transform:rotate(190deg);
-        opacity: 0;}
-}
-
-@keyframes snowflake2{
-    0%{left: 10%;
-        top: 0%;}
-    90%{opacity: 1;}    
-    100%{left: 10%;
-        top: 82%;
-        transform:rotate(180deg);
-        opacity: 0;}
-}
-
-@keyframes snowflake3{
-    0%{left: 15%;
-        top: 0%;
-        transform: scale(0.9);}
-    90%{opacity: 1;}    
-    100%{left: 15%;
-        top: 79%;
-        transform:rotate(-190deg);
-        opacity: 0;}
-}
-
-@keyframes snowflake4{
-    0%{left: 20%;
-        top: 0%;
-        transform: scale(1.1);
-        z-index: 2;}
-    90%{opacity: 1;}    
-    100%{left: 20%;
-        top: 74%;
-        transform:rotate(170deg);
-        opacity: 0;
-        z-index: 2;}
-}
-
-@keyframes snowflake5{
-    0%{left: 25%;
-        top: 0%;
-        transform: scale(0.8)}
-    90%{opacity: 1;}    
-    100%{left: 25%;
-        top: 81%;
-        transform:rotate(-180deg);
-        opacity: 0;}
-}
-
-@keyframes snowflake6{
-    0%{left: 28%;
-        top: 0%;}
-    90%{opacity: 1;}    
-    100%{left: 28%;
-        top: 80%;
-        transform:rotate(-180deg);
-        opacity: 0;}
-}
-
-@keyframes snowflake7{
-    0%{left: 33%;
-        top: 0%;
-        z-index: 2;}
-    90%{opacity: 1;}    
-    100%{left: 33%;
-        top: 72%;
-        transform:rotate(-280deg);
-        opacity: 0;
-        z-index: 2;}
-}
-
-@keyframes snowflake8{
-    0%{left: 37%;
-        top: 0%;
-        transform: scale(1.1)}
-    90%{opacity: 1;}    
-    100%{left: 41%;
-        top: 79%;
-        transform:rotate(360deg);
-        opacity: 0;}
-}
-
-@keyframes snowflake9{
-    0%{left: 43%;
-        top: 0%;
-        z-index: 2;}
-    90%{opacity: 1;}    
-    100%{left: 45%;
-        top: 72%;
-        transform:rotate(-180deg);
-        opacity: 0;
-        z-index: 2;}
-}
-
-@keyframes snowflake10{
-    0%{left: 51%;
-        top: 0%;
-        transform: scale(0.8)}
-    90%{opacity: 1;}    
-    100%{left: 51%;
-        top: 77%;
-        transform:rotate(-80deg);
-        opacity: 0;}
-}
-
-@keyframes snowflake11{
-    0%{left: 56%;
-        top: 0%;
-        transform: scale(1.2)}
-    90%{opacity: 1;}    
-    100%{left: 56%;
-        top: 82%;
-        transform:rotate(180deg);
-        opacity: 0;}
-}
-
-@keyframes snowflake12{
-    0%{left: 60%;
-        top: 0%;}
-    90%{opacity: 1;}    
-    100%{left: 60%;
-        top: 81%;
-        transform:rotate(-180deg);
-        opacity: 0;}
-}
-
-@keyframes snowflake13{
-    0%{left: 64%;
-        top: 0%;}
-    90%{opacity: 1;}    
-    100%{left: 64%;
-        top: 80%;
-        transform:rotate(180deg);
-        opacity: 0;}
-}
-
-@keyframes snowflake14{
-    0%{left: 69%;
-        top: 0%;}
-    90%{opacity: 1;}    
-    100%{left: 69%;
-        top: 82%;
-        transform:rotate(-180deg);
-        opacity: 0;}
-}
-
-@keyframes snowflake15{
-    0%{left:72%;
-        top: 0%;}
-    90%{opacity: 1;}    
-    100%{left: 74%;
-        top: 82%;
-        transform:rotate(-280deg);
-        opacity: 0;}
-}
-
-@keyframes snowflake16{
-    0%{left: 74%;
-        top: 0%;}
-    90%{opacity: 1;}    
-    100%{left: 77%;
-        top: 79%;
-        transform:rotate(90deg);
-        opacity: 0;}
-}
-
-@keyframes snowflake17{
-    0%{left: 75%;
-        top: 0%;}
-    90%{opacity: 1;}    
-    100%{left: 75%;
-        top: 72%;
-        transform:rotate(-180deg);
-        opacity: 0;}
-}
-
-@keyframes snowflake18{
-    0%{left: 79%;
-        top: 0%;
-        }
-    90%{opacity: 1;}    
-    100%{left: 81%;
-        top: 72%;
-        transform:rotate(-80deg);
-        opacity: 0;
-        }
-}
-
-@keyframes snowflake19{
-    0%{left: 84%;
-        top: 0%;}
-    90%{opacity: 1;}    
-    100%{left: 84%;
-        top: 82%;
-        transform:rotate(90deg);
-        opacity: 0;}
-}
-
-@keyframes snowflake20{
-    0%{left: 88%;
-        top: 0%;}
-    90%{opacity: 1;}    
-    100%{left: 89%;
-        top: 75%;
-        transform:rotate(-180deg);
-        opacity: 0;}
 }
