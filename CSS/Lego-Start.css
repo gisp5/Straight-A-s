@@ -329,7 +329,7 @@ body{
         /*Rel Tree*/
         #relTree1 {
             opacity: 1;
-            animation: qiuckLift 2s forwards linear;
+            animation: getGround 5s 25s forwards linear;
         }
         
         #relTree2 {
@@ -339,12 +339,12 @@ body{
         
         #relTree3 {
             opacity: 1;
-            animation: getGround 10s forwards linear;
+            animation: getGround 5s 21s forwards linear;
         }
         
         #relTree4 {
             opacity: 1;
-            animation: getGround 10s forwards linear;
+            animation: getGround 5s 27s forwards linear;
         }
         
         #relTree5 {
@@ -355,14 +355,14 @@ body{
         
         #relTree6 {
             opacity: 1;
-            animation: getGround 10s forwards linear;
+            animation: getGround 5s 30s forwards linear;
         }
 
 
         /*Lego Tree*/
         #legoTree1 {
             opacity: 0;
-            animation: qiuckLift 2s 15s reverse forwards linear;
+            animation: getGround 5s 25s reverse forwards linear;
         }
         
         #legoTree2 {
@@ -372,12 +372,12 @@ body{
         
         #legoTree3 {
             opacity: 0;
-            animation: getGround 10s reverse forwards linear;
+            animation: getGround 5s 21s reverse forwards linear;
         }
         
         #legoTree4 {
             opacity: 0;
-            animation: getGround 10s reverse forwards linear;
+            animation: getGround 5s 27s reverse forwards linear;
         }
         
         #legoTree5 {
@@ -387,7 +387,7 @@ body{
         
         #legoTree6 {
             opacity: 0;
-            animation: getGround 10s reverse forwards linear;
+            animation: getGround 5s 30s reverse forwards linear;
         }
 
 
