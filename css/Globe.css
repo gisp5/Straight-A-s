@@ -350,10 +350,13 @@
         position: absolute;
         z-index: 4;
         left: 39%; 
-        width: 7vw;
         opacity: 0;
         animation: mushroomCloudAnimation 2s linear forwards;
         animation-delay: 2.7s;
+    }
+
+    #mushroomCloud img {
+        width: 7vw;
     }
 
     @keyframes mushroomCloudAnimation {
