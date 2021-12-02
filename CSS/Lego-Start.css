@@ -329,7 +329,7 @@ body{
         /*Rel Tree*/
         #relTree1 {
             opacity: 1;
-            animation: quickLift 2s 15s forwards linear;
+            animation: qiuckLift 2s forwards linear;
         }
         
         #relTree2 {
@@ -362,7 +362,7 @@ body{
         /*Lego Tree*/
         #legoTree1 {
             opacity: 0;
-            animation: quickLift 2s 15s reverse forwards linear;
+            animation: qiuckLift 2s 15s reverse forwards linear;
         }
         
         #legoTree2 {
