@@ -29,7 +29,11 @@ body{
 
         #legoMoon {
             opacity: 0;
-            animation: legoMoonSpin 10s 10s forwards linear;
+            animation: legoMoonSpin 10s 10s 1 linear;
+        }
+        #legoMoonBob{
+            z-index: 0;
+            animation: moonBob 2s 20s forwards linear infinite;
 
         }
 
@@ -47,11 +51,11 @@ body{
 
         /*Moon Animations*/
             @keyframes moonBob {
-                0% {top: 0; 
-                    opacity: 1;}
+                0% {top: 4; 
+                    z-index: 4;}
                 50%{ top: 1%;}
                 100% {top: 0;
-                    opacity: 1;}
+                    z-index: 4;}
             }
             
 
