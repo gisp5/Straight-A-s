@@ -140,13 +140,13 @@ body {
 
 @keyframes spaceman1Float {
     0% { 
-        top: 50;
+        top: 50%;
     }
     50% { 
         top: 52%;  transform: rotate(-5deg);}
 
     100% {
-        top: 50;
+        top: 50%;
     }
 }
 
@@ -177,13 +177,14 @@ body {
 
 @keyframes spaceman2Float {
     100% {
-        top: 50;}
+        top: 50%;
+    }
 
     50% { 
         top: 54%; transform: rotate(35deg);
     }
     0% {
-        top: 50;
+        top: 50%;
     }
 }
 
