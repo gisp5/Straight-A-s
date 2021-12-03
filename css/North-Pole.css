@@ -373,7 +373,7 @@ a{
     z-index: 7;
     height:20%;
     animation-duration: 360s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
     animation-timing-function: linear;
 }
 
@@ -388,7 +388,7 @@ a{
     left: -20%;
     transform: scale(1.5);
     animation-name: cloudMovement2;
-    animation-delay: 60s;
+    animation-duration: 300s
 }
 
 #cloud3{
@@ -396,14 +396,14 @@ a{
     left: -20%;
     transform: scale(0.8);
     animation-name: cloudMovement3;
-    animation-delay: 100s;
+    animation-duration: 240s
 }
 
 #cloud4{
     top:3%;
-    left: -20%;
+    left: 70%;
     transform: scale(1);
-    animation-delay: 150s;
+    animation-duration: 130s;
     animation-name: cloudMovement4;
 }
 
@@ -412,28 +412,28 @@ a{
 
 @keyframes cloudMovement1{
     0%{top:7%;
-        left: -20%;}
+        left: 5%;}
     100%{top: 7%;
         left: 130%;}
 }
 
 @keyframes cloudMovement2{
     0%{top:5%;
-        left: -20%;}
+        left: 20%;}
     100%{top: 5%;
         left: 130%;}
 }
 
 @keyframes cloudMovement3{
     0%{top:0%;
-        left: -20%;}
+        left: 40%;}
     100%{top: 0%;
         left: 130%;}
 }
 
 @keyframes cloudMovement4{
     0%{top:10%;
-        left: -20%;}
+        left: 60%;}
     100%{top: 10%;
         left: 130%;}
 }
