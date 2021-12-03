@@ -13,15 +13,6 @@ body{
 /*Styling for sky and snow backround*/
 /*---------------------------------------------------------------------------------------*/
 
-    .skyContainer{
-        position: absolute;
-        left: 0;
-    }
-
-    .sky{
-        width: 100vw;
-    }
-
     .snowContainer{
         position: absolute;
         bottom: 0;
@@ -34,6 +25,16 @@ body{
     .snowGround{
         height:40vh;
     }
+    
+    .skyContainer{
+        position: absolute;
+        left: 0;
+    }
+
+    .sky{
+        width: 100vw;
+    }
+
 
 
 /*Stylig for stair*/
@@ -112,7 +113,6 @@ body{
         width: 30%;
         padding: .4%;
         flex: 1 0 10%;
-        /*flex-basis: 10%;*/
     }
 
 
